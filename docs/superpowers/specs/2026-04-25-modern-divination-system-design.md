@@ -201,6 +201,12 @@ These don't need to be answered now - they will surface from the analysis and wo
 - The casting mechanism (3 coins likely, but the *naming* of the act might shift)
 - Whether the hexagrams have a sequence (King Wen analog) or are flat / differently ordered
 
+## Planning approach
+
+Implementation planning happens **phase by phase, not all at once**. Each phase's output informs the next, so trying to fully plan Phase 4 (writing) before Phase 3 (substrate) exists would produce a fictional plan.
+
+The first implementation plan will cover **Phase 1 (analyze) only**. After Phase 1 completes and we have *What the I Ching Is For*, we'll write the next plan for Phase 2, and so on. This keeps each plan grounded in real prior output.
+
 ## Risks and mitigations
 
 - **Phase 1 / 2 expansion**: the analysis and distillation phases could expand without limit. *Mitigation*: hold to the deliverable as the finish criterion - a 1-2 page document for analysis, a clear list for distillation.
