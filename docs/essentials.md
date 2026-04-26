@@ -32,23 +32,23 @@ What structural elements of the I Ching the new system inherits as load-bearing.
 
 **64 distinct composite states.** Six positions, two values each: 64 combinations. This is the scope of the system. It is humanly tractable, internally complete, and has no serious alternative.
 
-**Changing-line mechanism.** States transform into other states via individual line changes. This is what makes the system dynamic rather than static - a situation contains the seed of the next one.
-
 **Image-based answers, not rule-based.** The response is an image the consulter must apply. No rule hands them a conclusion; the gap between image and situation is where the work happens.
 
 **Situation-as-pattern, not situation-as-event.** Each composite state names a type of moment, not a prediction about what will occur. This separates the system from fortune-telling at the structural level.
 
 **Position-within-situation matters.** Line 1 and Line 5 of the same hexagram describe different positions within the same type of moment, and may call for opposite orientations. This is a structural fact, not a cultural overlay.
 
-### Provisional (pending Phase 3 confirmation)
+### Confirmed during Phase 3
 
-These three items are placeholders carried from the original I Ching for tractability and elegance. Phase 3 substrate work should confirm or revise each.
+These were provisional at end of Phase 2; Phase 3 worldview work has now settled them.
 
-**8 trigrams composing into 64 as upper + lower pair.** Kept provisionally because it makes the 64 humanly tractable and even the most skeptical source (Hatcher) treats the trigram skeleton as load-bearing. Phase 3 confirms whether the new substrate's 8 primary forces actually compose meaningfully in pairs.
+**Trigram = one channel.** Each trigram represents a single channel (a connection in the consulter's situation), fully characterized by three binary properties: open/closed (line 1, foundation), focused/distributed (line 2, body), outward/inward (line 3, surface). The 8 trigram patterns are 8 distinct channel postures.
 
-**Loose per-line position semantics.** The structural fact (position matters) is locked above. The specific Confucian feudal assignments - line 5 as ruler, line 4 as minister - are not. Phase 3 designs new semantics from the substrate.
+**Hexagram = two channels in temporal relation.** Lower trigram = the channel live right now. Upper trigram = the channel emerging. The 64 hexagrams enumerate 64 distinct present-to-emerging trajectories. The upper/lower distinction is *temporal*, not spatial (deliberately not inner/outer, not self/other).
 
-**Flat ordering for v1.** The 64 are treated as a set; no sequence is authoritative. King Wen's arrangement is not preserved. Phase 3 may introduce an ordering if the substrate suggests one.
+**Each line has a fixed binary semantic.** Line 1 always asks open/closed; line 2 always asks focused/distributed; line 3 always asks outward/inward. Same applies to lines 4-6 of the upper trigram. This replaces the "loose" provisional from Phase 2 with concrete per-line semantics derived from the worldview.
+
+**Flat ordering for v1.** Confirmed. The 64 are treated as a set; no canonical sequence. King Wen's arrangement is not preserved.
 
 ## Rejected elements
 
@@ -70,22 +70,24 @@ What we are explicitly NOT bringing forward, and why.
 
 **Specific astrological and seasonal correspondences.** The correlative cosmology connecting hexagrams to seasons, directions, and celestial positions is historically specific and not carried forward.
 
-## Deferred to Phase 3
+**Changing-line mechanism.** Dropped during Phase 3. The hexagram itself encodes a transition (present channel → emerging channel), so changing-lines do redundant work. Each casting yields one hexagram; there is no second hexagram and no per-line conditional readings.
 
-Open design choices that will be settled by the substrate work in the next phase.
+## Settled during Phase 3 (was deferred at end of Phase 2)
 
-**Architectural revisit (Decision B items).** The three provisional items in the Architectural invariants section - trigram-pair composition, per-line position semantics, and flat ordering - are explicitly up for review. Phase 3 confirms or revises each.
+**Naming the two primary states.** Settled as **on / off** (computer-binary register). Multiple interpretive frames (signal/silence, charge/ground, present/absent, etc.) can be layered into entry text without any single frame being load-bearing.
 
-**Naming the two primary states.** Yin and yang are dropped. The new names should emerge from the substrate and carry the same structural load without the cosmological baggage.
+**Naming the 8 primary forces.** Settled as channel states: **POUR, DRAW, BROADCAST, GATHER, AIM, WATCH, STAND, ROOM**. Each is a posture a channel can be in, derived from the three binary properties.
 
-**Naming the 8 primary forces.** Heaven, Earth, Thunder, Wind, Water, Fire, Mountain, Lake are gone as authoritative names. Eight new names to be derived from the substrate, with internal logic as a set.
+**Per-line position semantics.** Settled. Each line has a fixed binary semantic (open/closed, focused/distributed, outward/inward). See "Confirmed during Phase 3" above.
 
-**New per-line position semantics.** Line positions need a fresh mapping that replaces the feudal assignments. What does "early," "central," or "late" in a situation actually mean in the new worldview?
+**The casting mechanism.** Settled. Six binary draws producing a 6-bit hexagram. Any randomization works (one coin × six flips, six coins, single die per line, in-app generator). No 3-coin / yarrow-stalk methods needed.
 
-**The casting mechanism.** Three coins is the likely mechanism, but the naming, framing, and ritual register of the act are open. The secular case (randomness breaks a rut) and the less-secular case (something in the casting is meaningful) don't need to be resolved, but the framing should be decided.
+**The substrate content.** Settled. See `docs/substrate.md` for the full worldview document.
 
-**The eclectic syncretic substrate's actual content.** Which contemporary domains contribute - and how they compose without any single one being load-bearing - is the central Phase 3 question.
+## Still deferred to later phases
 
-**Voice and aesthetic specifics.** The thoughtful-friend register is settled; the precise tone, imagery register, and sentence rhythm are not.
+**Voice and aesthetic specifics.** The thoughtful-friend register is settled in the substrate's style guide. The precise tone, imagery register, and sentence rhythm in actual entries get nailed in Phase 4 (writing) by drafting and revising entries together.
 
-**Project name.** Deferred until the worldview suggests one.
+**Visual identity for the web app.** Defaults to warm-minimalist register like the i-ching site; specifics deferred to Phase 5 (build).
+
+**Project name.** Deferred until Phase 4 surfaces a fitting one.
