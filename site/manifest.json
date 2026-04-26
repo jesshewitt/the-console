@@ -1,0 +1,25 @@
+{
+    "name": "The Console",
+    "short_name": "Console",
+    "description": "A divination system.",
+    "theme_color": "#4a7670",
+    "background_color": "#16171a",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "./img/favicon.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./img/icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}

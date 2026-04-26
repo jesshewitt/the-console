@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A modern divination system that names a present channel and an emerging one, helping you see your situation differently.">
+        <meta name="theme-color" content="#4a7670" media="(prefers-color-scheme: light)">
+        <meta name="theme-color" content="#16171a" media="(prefers-color-scheme: dark)">
+
+        <!-- Open Graph (link previews on social and chat apps). The title and description
+             are static; client-side routing means crawlers see the home page values. -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="The Console">
+        <meta property="og:description" content="A modern divination system that names a present channel and an emerging one, helping you see your situation differently.">
+        <meta property="og:image" content="/img/icon.png">
+        <meta name="twitter:card" content="summary">
+
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="icon" href="/img/favicon.png">
+        <link rel="apple-touch-icon" href="/img/icon.png">
+        <link rel="manifest" href="/manifest.json">
+        <script>
+            // Apply saved theme before body renders to avoid a light/dark flash.
+            try {
+                const t = localStorage.getItem('console-theme')
+                if (t === 'dark' || t === 'light') document.documentElement.classList.add('theme-' + t)
+            } catch (e) {}
+        </script>
+        <script defer type="module" src="/js/app.js"></script>
+        <title>The Console</title>
+    </head>
+    <body>
+        <noscript>This site requires javascript.</noscript>
+        <header></header>
+        <main></main>
+        <footer></footer>
+
+        <script>
+            navigator.serviceWorker && navigator.serviceWorker.register('/sw.js')
+        </script>
+    </body>
+</html>

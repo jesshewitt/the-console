@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="icon" href="/img/favicon.png">
+        <script>
+            try {
+                const t = localStorage.getItem('console-theme')
+                if (t === 'dark' || t === 'light') document.documentElement.classList.add('theme-' + t)
+            } catch (e) {}
+        </script>
+        <title>The Console - Offline</title>
+    </head>
+    <body>
+        <header>
+            <h1>The Console</h1>
+        </header>
+        <main>Unable to connect to the internet.</main>
+        <footer></footer>
+    </body>
+</html>
