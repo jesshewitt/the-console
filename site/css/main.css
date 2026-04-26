@@ -480,3 +480,97 @@ ul {
 .hex-row-compact .hex-glyph svg {
     height: 1em;
 }
+
+/* Hexagram detail page */
+.hex-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+.hex-glyph-large svg {
+    height: 1.5em;
+}
+
+.hex-num-large {
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+}
+
+.hex-composition-detail {
+    color: var(--text-muted);
+    font-size: 0.95em;
+    margin-top: -0.5em;
+}
+
+.hex-composition-detail a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+}
+
+.hex-composition-detail a:hover {
+    color: var(--accent);
+}
+
+.hex-comp-label {
+    font-style: italic;
+    font-size: 0.85em;
+    margin-right: 0.25em;
+}
+
+.hex-arrow {
+    margin: 0 0.25em;
+}
+
+.hex-sense {
+    font-size: 1.1em;
+}
+
+.hex-image {
+    line-height: 1.55;
+}
+
+.hex-channels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.hex-channel {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.2em 0.5em;
+    align-items: center;
+    padding: 0.75em;
+    border: 1px solid var(--text-muted);
+    border-radius: 4px;
+}
+
+.hex-channel-glyph {
+    grid-row: 1 / 3;
+}
+
+.hex-channel-glyph svg {
+    height: 2em;
+}
+
+.hex-channel-label {
+    color: var(--text-muted);
+    font-size: 0.85em;
+}
+
+.hex-channel p {
+    grid-column: 1 / 3;
+    margin: 0.25em 0 0 0;
+}
+
+@media (max-width: 600px) {
+    .hex-channels {
+        grid-template-columns: 1fr;
+    }
+}
