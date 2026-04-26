@@ -308,3 +308,16 @@ ul {
         padding: 0 5%;
     }
 }
+
+/* SVG hexagram and trigram glyphs */
+.glyph {
+    display: inline-block;
+    color: var(--accent);
+    height: 1.2em;
+    width: auto;
+    vertical-align: middle;
+}
+
+.glyph-large {
+    height: 4em;
+}
