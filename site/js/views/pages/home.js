@@ -19,7 +19,7 @@ const hexagramRow = hexagram => html`
             <span class="hex-num">${hexagram.id}.</span>
             <span class="hex-glyph">${raw(renderHexagramGlyph(hexagram.pattern))}</span>
             <span class="hex-name">${hexagram.name}</span>
-            <span class="hex-composition">${hexagram.lower} - ${hexagram.upper}</span>
+            <span class="hex-composition">${hexagram.lower} → ${hexagram.upper}</span>
         </a>
     </li>
 `
