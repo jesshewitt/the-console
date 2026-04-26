@@ -46,7 +46,7 @@ class Hexagram {
                 <span class="hex-comp-label">(emerging)</span>
             </p>
 
-            <p class="hex-sense"><em>${hexagram.coreSense}</em></p>
+            <p class="hex-sense">${hexagram.coreSense}</p>
 
             <p class="hex-image">${hexagram.image}</p>
 

@@ -58,27 +58,15 @@ class Trigram {
             </h2>
 
             <p class="tri-pattern">${patternLabel(trigram.pattern)}</p>
-            <p class="tri-sense"><em>${trigram.coreSense}</em></p>
+            <p class="tri-sense">${trigram.coreSense}</p>
             <p>${trigram.description}</p>
 
-            <h3>Range</h3>
-            <dl class="tri-range">
-                <dt>Inner life</dt><dd>${trigram.range.innerLife}</dd>
-                <dt>Relationships</dt><dd>${trigram.range.relationships}</dd>
-                <dt>Work</dt><dd>${trigram.range.work}</dd>
-                <dt>Body</dt><dd>${trigram.range.body}</dd>
-                <dt>World</dt><dd>${trigram.range.world}</dd>
-            </dl>
-
-            <h3>In combination</h3>
-            <p>${trigram.inCombination}</p>
-
-            <h3>As present channel (lower)</h3>
+            <h3>As present channel</h3>
             <ul class="hex-grid-compact">
                 ${asLower.map(hexagramRow)}
             </ul>
 
-            <h3>As emerging channel (upper)</h3>
+            <h3>As emerging channel</h3>
             <ul class="hex-grid-compact">
                 ${asUpper.map(hexagramRow)}
             </ul>

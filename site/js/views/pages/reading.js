@@ -37,8 +37,6 @@ class Reading {
         const newSeed = Math.floor(Math.random() * 1e9).toString(36)
 
         return html`
-            <p class="reading-seed">Cast from seed: <span class="reading-seed-value">${seed}</span></p>
-
             <h2 class="reading-heading">
                 <span class="hex-glyph-large">${raw(renderHexagramGlyph(hexagram.pattern, {className: 'glyph glyph-large'}))}</span>
                 <span class="reading-num">#${hexagram.id}</span>
@@ -53,7 +51,7 @@ class Reading {
                 <span class="hex-comp-label">(emerging)</span>
             </p>
 
-            <p class="hex-sense"><em>${hexagram.coreSense}</em></p>
+            <p class="hex-sense">${hexagram.coreSense}</p>
 
             <p class="reading-image">${hexagram.image}</p>
 
