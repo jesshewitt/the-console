@@ -574,3 +574,40 @@ ul {
         grid-template-columns: 1fr;
     }
 }
+
+/* Reading page */
+.reading-seed {
+    color: var(--text-muted);
+    font-size: 0.9em;
+    margin-bottom: 0;
+}
+
+.reading-seed-value {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    background: rgba(128, 128, 128, 0.08);
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+}
+
+.reading-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+.reading-num {
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+}
+
+.reading-image {
+    line-height: 1.6;
+    font-size: 1.05em;
+}
+
+.reading-actions {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid var(--text-muted);
+}
