@@ -16,7 +16,7 @@ export const trigrams = [
             body: 'Resting state, no sensory focus.',
             world: 'Open civic space, no event happening.',
         },
-        inCombination: 'Brings wide, unfocused receptivity to a reading - open to whatever might come.',
+        inCombination: 'Brings wide, unfocused receptivity to a reading, open to whatever might come.',
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ export const trigrams = [
         name: 'STANDBY',
         glyph: '☶',
         coreSense: 'Broad reach held ready, nothing being sent.',
-        description: 'You have the platform, the network, the capacity to reach many people - but nothing is going out right now. The transmitter is live, the stage is set, no performance is happening. Reserved capacity: the means to broadcast widely, currently silent.',
+        description: 'You have the platform, the network, the capacity to reach many people, but nothing is going out right now. The transmitter is live, the stage is set, no performance is happening. Reserved capacity: the means to broadcast widely, currently silent.',
         range: {
             innerLife: 'A wide-ranging interest currently quiet.',
             relationships: 'A network of acquaintances you\'re not engaging right now.',
@@ -32,7 +32,7 @@ export const trigrams = [
             body: 'General energy not directed anywhere.',
             world: 'A broad influence currently dormant.',
         },
-        inCombination: 'Brings latent reach - distributed outward capacity held in reserve, waiting for a message.',
+        inCombination: 'Brings latent reach, distributed outward capacity held in reserve, waiting for a message.',
     },
     {
         id: 3,
@@ -48,7 +48,7 @@ export const trigrams = [
             body: 'Sensing for a specific signal.',
             world: 'Watching for one event to happen.',
         },
-        inCombination: 'Brings focused, pointed waiting - attention held on one source, expectant but not yet receiving.',
+        inCombination: 'Brings focused, pointed waiting. Attention held on one source, expectant but not yet receiving.',
     },
     {
         id: 4,
@@ -64,7 +64,7 @@ export const trigrams = [
             body: 'Held tension awaiting release.',
             world: 'An action being prepared, a pending decision.',
         },
-        inCombination: 'Brings focused, pointed intention - aimed at one target but not yet firing.',
+        inCombination: 'Brings focused, pointed intention, aimed at one target but not yet firing.',
     },
     {
         id: 5,
@@ -80,7 +80,7 @@ export const trigrams = [
             body: 'Sensing the field, taking in environmental information.',
             world: 'Surveying public mood, gathering information.',
         },
-        inCombination: 'Brings wide, active reception - pulling in from everywhere, not yet sorted.',
+        inCombination: 'Brings wide, active reception, pulling in from everywhere, not yet sorted.',
     },
     {
         id: 6,
@@ -88,7 +88,7 @@ export const trigrams = [
         name: 'BROADCAST',
         glyph: '☲',
         coreSense: 'Active sending spread across many receivers at once.',
-        description: 'You\'re sending outward to many people at the same time. Publication, performance, scattered seed. The connection is real but diffuse - each person gets a fraction of what a one-to-one conversation would carry. You send without knowing exactly who receives, without getting much back.',
+        description: 'You\'re sending outward to many people at the same time. Publication, performance, scattered seed. The connection is real but diffuse, and each person gets a fraction of what a one-to-one conversation would carry. You send without knowing exactly who receives, without getting much back.',
         range: {
             innerLife: 'An idea you\'re trying out in many directions.',
             relationships: 'Maintaining many connections at once.',
@@ -96,7 +96,7 @@ export const trigrams = [
             body: 'General energy radiating outward.',
             world: 'A public statement, art released into the world.',
         },
-        inCombination: 'Brings wide, active sending - transmitting to many, diffuse and outward.',
+        inCombination: 'Brings wide, active sending, transmitting to many, diffuse and outward.',
     },
     {
         id: 7,
@@ -112,7 +112,7 @@ export const trigrams = [
             body: 'Receiving care or healing from one source.',
             world: 'Witnessing one event with full attention.',
         },
-        inCombination: 'Brings focused, deep reception - fully open to one source.',
+        inCombination: 'Brings focused, deep reception, fully open to one source.',
     },
     {
         id: 8,
@@ -128,6 +128,6 @@ export const trigrams = [
             body: 'Sustained physical effort directed at one task.',
             world: 'A campaign, a sustained advocacy.',
         },
-        inCombination: 'Brings concentrated, focused sending - fully committed outward to one target.',
+        inCombination: 'Brings concentrated, focused sending, fully committed outward to one target.',
     },
 ]
