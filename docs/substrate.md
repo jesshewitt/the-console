@@ -39,18 +39,18 @@ Convention: lines read bottom-to-top.
 
 | # | Pattern (b-m-t) | Name | Posture |
 |---|---|---|---|
-| 1 | open / focused / outward | **POUR** | Concentrated outward energy through one channel. Devoted work, sustained giving, focused offering. |
-| 2 | open / focused / inward | **DRAW** | Concentrated reception from one source. Deep listening, careful watching, sustained attention received. |
-| 3 | open / distributed / outward | **BROADCAST** | Energy spread outward across many. Publication, performance, scattered seed. |
-| 4 | open / distributed / inward | **GATHER** | Energy taken in widely from many. Scanning, reading the room, sampling broadly. |
-| 5 | closed / focused / outward | **AIM** | Held intention pointed at one target, not yet active. A vow not yet enacted, the nocked arrow. |
-| 6 | closed / focused / inward | **WATCH** | Watchful attention on one source, awaiting return. Vigil, expectant attention. |
-| 7 | closed / distributed / outward | **STAND** | Wide reach available but currently silent. Reserved capacity, an empty stage. |
-| 8 | closed / distributed / inward | **ROOM** | Wide availability open to many but currently empty. Hospitality without guests, a hollow waiting to be filled. |
+| 1 | open / focused / outward | **TRANSMIT** | Sending one signal to one receiver. Concentrated outward energy through a single channel. Devoted work, sustained giving, focused offering. |
+| 2 | open / focused / inward | **RECEIVE** | Taking in one signal from one source. Concentrated reception, deep listening, sustained attention received. |
+| 3 | open / distributed / outward | **BROADCAST** | Sending widely across many receivers. Energy spread outward. Publication, performance, scattered seed. |
+| 4 | open / distributed / inward | **SCAN** | Sweeping the spectrum, sampling many sources. Energy taken in widely. Reading the room, intake, gathering data. |
+| 5 | closed / focused / outward | **AIM** | Antenna pointed at one receiver, no signal yet. Held intention, the nocked arrow, a vow not yet enacted. |
+| 6 | closed / focused / inward | **TUNE** | Tuned to a specific frequency, no signal arriving yet. Held attention on one source, vigil, expectant readiness. |
+| 7 | closed / distributed / outward | **STANDBY** | Transmitter live, no message queued. Wide reach available but currently silent. Reserved capacity, an empty stage. |
+| 8 | closed / distributed / inward | **MONITOR** | Receiver active, nothing arriving. Wide availability open to many but currently empty. Hospitality without guests. |
 
-Each channel state has a fuller per-state description (range across domains, examples in inner life / relationships / work / body / world) - see entry templates and the planned trigram entries.
+The 8 names are drawn from the same register (signal / communications), aligning with the channel-as-anchor metaphor. Each channel state has a fuller per-state description (range across domains, examples in inner life / relationships / work / body / world) - see entry templates and the planned trigram entries.
 
-The four "active" states (POUR, DRAW, BROADCAST, GATHER) pair with their "latent" counterparts (AIM, WATCH, STAND, ROOM). Active and latent share two properties (focus and direction) and differ on open/closed: the active state is carrying energy; the latent state is the same posture held but not currently flowing. This active/latent pairing is the most semantically useful relation among the 8 in this worldview.
+The four "active" states (TRANSMIT, RECEIVE, BROADCAST, SCAN) pair with their "latent" counterparts (AIM, TUNE, STANDBY, MONITOR). Active and latent share two properties (focus and direction) and differ on open/closed: the active state is carrying signal; the latent state is the same posture held but not currently flowing. This active/latent pairing is the most semantically useful relation among the 8 in this worldview.
 
 ## 4. Composition
 

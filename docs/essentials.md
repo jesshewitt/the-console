@@ -76,7 +76,7 @@ What we are explicitly NOT bringing forward, and why.
 
 **Naming the two primary states.** Settled as **on / off** (computer-binary register). Multiple interpretive frames (signal/silence, charge/ground, present/absent, etc.) can be layered into entry text without any single frame being load-bearing.
 
-**Naming the 8 primary forces.** Settled as channel states: **POUR, DRAW, BROADCAST, GATHER, AIM, WATCH, STAND, ROOM**. Each is a posture a channel can be in, derived from the three binary properties.
+**Naming the 8 primary forces.** Settled as channel states from the signal/communications register: **TRANSMIT, RECEIVE, BROADCAST, SCAN, AIM, TUNE, STANDBY, MONITOR**. Each is a posture a channel can be in, derived from the three binary properties. All 8 names are drawn from the same register (signal/communications), aligning with the channel-as-anchor metaphor.
 
 **Per-line position semantics.** Settled. Each line has a fixed binary semantic (open/closed, focused/distributed, outward/inward). See "Confirmed during Phase 3" above.
 
