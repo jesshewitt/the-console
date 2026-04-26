@@ -100,14 +100,33 @@ git commit -m "docs: design the two primary states"
 
 ---
 
-## Task 3: Design the eight primary forces - structural logic (collaborative)
+## Task 3 (REVISED): Articulate the worldview
 
-**Controller-executed.** Before naming the 8 forces individually (Task 4), settle the LOGIC of the 8 as a set: how they relate to each other, what axes they sit on, whether they preserve the original trigram structure or restructure.
+**Controller-executed; collaborative.** Before naming the 8 forces, articulate the *substantive worldview* the system rests on. What does the system actually believe about how situations work, and what does each architectural layer (line, trigram, position, hexagram, upper/lower, change) represent semantically?
+
+**Why this task replaces "structural logic":** The original Task 3 was structural mapping (8 binary patterns at 3 positions → 8 named forces). User correctly identified this as retconning meaning into existing structure. The fix is to articulate the worldview first, then derive what each layer means from it. Subsequent tasks (forces, composition, change, casting) all derive from the worldview rather than from the binary math.
+
+**The architectural decisions from the original Task 3 (kept original 8-trigram structure, four pairs of opposites by binary inversion, positional weight within trigrams) remain structurally** but their *semantic content* is what this worldview task supplies.
 
 **Files:**
-- Read: `/Users/jess/dev/divination/docs/notes/07-primary-states.md` (Task 2 output)
-- Read: `/Users/jess/dev/divination/docs/essentials.md` (provisional architecture)
-- Create: `/Users/jess/dev/divination/docs/notes/08-eight-forces-structure.md`
+- Read: `/Users/jess/dev/divination/docs/notes/07-primary-states.md` (Task 2 output - on/off as technical primitive names)
+- Read: `/Users/jess/dev/divination/docs/notes/08-eight-forces-structure.md` (kept architectural decisions)
+- Read: `/Users/jess/dev/divination/docs/essentials.md` (functional core)
+- Create: `/Users/jess/dev/divination/docs/notes/worldview-draft.md` (working draft, iterated with user)
+- Create: `/Users/jess/dev/divination/docs/notes/08b-worldview.md` (final worldview captured for downstream tasks)
+
+The worldview must answer:
+1. What is a *situation* in this system?
+2. What does a *line* represent semantically (what does on/off actually mean)?
+3. What does a *trigram* represent? What does each position within a trigram represent?
+4. What does a *hexagram* represent? What does upper/lower mean?
+5. How does *change* work in the worldview (not just mechanically)?
+6. What does *reading* do for the consulter (not just functionally - what is happening when reframing works)?
+
+Process:
+1. Controller drafts a worldview proposal (Option B from the user choice).
+2. User reacts; revisions iterate until the worldview holds together.
+3. Final version captured in `08b-worldview.md` for Tasks 4-5 to derive from.
 
 - [ ] **Step 1: Confirm or revise the structural provisional**
 
@@ -141,14 +160,16 @@ git commit -m "docs: design structural logic of the eight primary forces"
 
 ---
 
-## Task 4: Design the eight primary forces - per-force content (collaborative)
+## Task 4 (REVISED): Design the eight primary forces - derived from the worldview
 
-**Controller-executed.** With structure settled in Task 3, name and describe each of the 8 forces individually. This is the most content-intensive task in Phase 3.
+**Controller-executed; collaborative.** With the worldview articulated in Task 3, derive what each of the 8 forces represents. Names follow from meanings, not the other way around.
 
 **Files:**
-- Read: `/Users/jess/dev/divination/docs/notes/07-primary-states.md`
-- Read: `/Users/jess/dev/divination/docs/notes/08-eight-forces-structure.md`
+- Read: `/Users/jess/dev/divination/docs/notes/08b-worldview.md` (the just-articulated worldview)
+- Read: `/Users/jess/dev/divination/docs/notes/08-eight-forces-structure.md` (architectural facts: 8 trigrams, 4 pairs of opposites, foundation/body/surface positional weight)
 - Create: `/Users/jess/dev/divination/docs/notes/09-eight-forces-content.md`
+
+**Order matters**: don't propose names first. Propose what each force MEANS in the worldview's terms first, then name. The previous attempt (DRIVE/YIELD/STIR/DRIFT/CORE/SHELL/SHOW/BREW) was structural-mapping and is discarded.
 
 - [ ] **Step 1: Propose initial naming for the 8 forces**
 
@@ -189,9 +210,9 @@ git commit -m "docs: write content for the eight primary forces"
 
 ---
 
-## Task 5: Design composition, change, and casting (collaborative)
+## Task 5 (REVISED): Design casting and refine stance
 
-**Controller-executed.** Three smaller substrate sections that can usually be settled in one session. They share dependencies (composition affects how change is read; casting affects stance) so it's natural to work them together.
+**Controller-executed; collaborative.** Composition (what trigrams pair into) and change (what changing lines mean) are now answered as part of the worldview in Task 3. Task 5 is reduced to settling the casting mechanism and refining the stance section.
 
 **Files:**
 - Read: notes 07, 08, 09 from Tasks 2-4
