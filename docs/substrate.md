@@ -65,6 +65,8 @@ The 64 hexagrams are 64 distinct trajectories from a present channel state to an
 
 The upper/lower distinction is therefore *temporal* (now / becoming), not *spatial* (not inner/outer, not self/other). This is a deliberate departure from the original I Ching's outer-trigram-meets-inner-trigram framing.
 
+**Numbering**: hexagrams can be referenced by their 6-bit binary value (lines read bottom-to-top: line 1 = least significant bit). For human-friendly enumeration in the app, use 1-64 indexing where hexagram N corresponds to binary value N-1. Specific UI ordering (sorted by binary, grouped by lower trigram, etc.) is a Phase 5 design choice; the substrate doesn't prescribe one.
+
 ## 5. Change
 
 Change is built into the hexagram structure itself. Every reading is a transition - present channel → emerging channel. There is no separate "changing lines" mechanism.
