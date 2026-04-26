@@ -8,7 +8,7 @@ export const trigrams = [
         name: 'MONITOR',
         glyph: '☷',
         coreSense: 'Wide open availability with nothing arriving.',
-        description: 'You\'re receptive to whatever might come, but nothing has come in yet. The attention is real and broad, not aimed at anything specific. Hospitality without guests: the space is prepared, the openness is genuine, and nothing is filling it right now.',
+        description: 'You\'re available to whatever might come, but nothing has arrived yet. The attention is real and broad, not aimed at anything in particular. The openness is genuine, and right now nothing is filling it.',
         range: {
             innerLife: 'A general openness, not focused on anything specific.',
             relationships: 'Available to friends, but no one has called.',
@@ -24,7 +24,7 @@ export const trigrams = [
         name: 'STANDBY',
         glyph: '☶',
         coreSense: 'Broad reach held ready, nothing being sent.',
-        description: 'You have the platform, the network, the capacity to reach many people, but nothing is going out right now. The transmitter is live, the stage is set, no performance is happening. Reserved capacity: the means to broadcast widely, currently silent.',
+        description: 'You have the platform, the network, the capacity to reach many people, but nothing is going out right now. The transmitter is live, the stage is set, and nothing is happening yet. The reach is real, just unused at the moment.',
         range: {
             innerLife: 'A wide-ranging interest currently quiet.',
             relationships: 'A network of acquaintances you\'re not engaging right now.',
@@ -40,7 +40,7 @@ export const trigrams = [
         name: 'TUNE',
         glyph: '☵',
         coreSense: 'Focused on one source, waiting for a signal that hasn\'t come.',
-        description: 'Your attention is pointed at something specific, and you\'re holding that focus. But nothing has arrived yet. This is vigil: watching for one particular thing, maintaining a real and specific attention, even in the absence of anything to receive.',
+        description: 'Your attention is pointed at something specific, and you\'re holding that focus. Nothing has arrived yet. You\'re watching for one particular thing, maintaining a real and specific attention, even when there\'s nothing to receive.',
         range: {
             innerLife: 'Waiting for an answer to surface.',
             relationships: 'Waiting for a response from someone specific.',
@@ -56,7 +56,7 @@ export const trigrams = [
         name: 'AIM',
         glyph: '☴',
         coreSense: 'Intention formed and held toward one target, not yet acted on.',
-        description: 'The direction is clear and the energy is gathered, but nothing has been sent yet. The nocked arrow, the plan fully formed, the vow not yet spoken. The intention is real and specific; the action is still held.',
+        description: 'The direction is clear and the energy is gathered, but nothing has been sent yet. The plan is fully formed and the intention is real, aimed at one specific target. The action is still held.',
         range: {
             innerLife: 'A goal you\'ve set but aren\'t acting on yet.',
             relationships: 'A confession you\'re holding back, a connection you intend to make.',
@@ -120,7 +120,7 @@ export const trigrams = [
         name: 'TRANSMIT',
         glyph: '☰',
         coreSense: 'All your active energy going to one specific place.',
-        description: 'One person, one project, one direction, and you\'re committed there. Nothing is scattered, nothing held back. This is the posture of devoted work and sustained giving. The connection is one-to-one, the flow is outward, and what you have is going where it\'s aimed.',
+        description: 'One person, one project, one direction, and you\'re committed there. Nothing is scattered, nothing held back. The connection is one-to-one, the flow is outward, and what you have is going where it\'s aimed.',
         range: {
             innerLife: 'Putting all reflective attention on one question.',
             relationships: 'Dedicated attention given fully to one person.',
