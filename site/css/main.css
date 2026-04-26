@@ -321,3 +321,99 @@ ul {
 .glyph-large {
     height: 4em;
 }
+
+/* Trigram grid: glyph, name, coreSense */
+.tri-grid {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: 0.3em 0.75em;
+    list-style: none;
+    padding: 0;
+}
+
+.tri-grid > li {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+}
+
+.tri-row {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+    gap: inherit;
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+    padding: 0.3em 0;
+}
+
+.tri-row:hover,
+.tri-row:focus-visible {
+    color: var(--accent);
+}
+
+.tri-glyph svg {
+    height: 1.2em;
+    width: auto;
+}
+
+.tri-name {
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.tri-sense {
+    color: var(--text-muted);
+}
+
+/* Hexagram grid: id, glyph, name, composition */
+.hex-grid {
+    display: grid;
+    grid-template-columns: auto auto auto 1fr;
+    gap: 0 0.75em;
+    list-style: none;
+    padding: 0;
+}
+
+.hex-grid > li {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+}
+
+.hex-row {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+    gap: inherit;
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+    padding: 0.2em 0;
+}
+
+.hex-row:hover,
+.hex-row:focus-visible {
+    color: var(--accent);
+}
+
+.hex-num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    color: var(--text-muted);
+}
+
+.hex-glyph svg {
+    height: 1.2em;
+    width: auto;
+}
+
+.hex-name {
+    font-weight: bold;
+}
+
+.hex-composition {
+    color: var(--text-muted);
+    font-size: 0.9em;
+}
