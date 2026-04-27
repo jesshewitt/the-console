@@ -55,9 +55,18 @@ export const cards = [
     {
         id: 4,
         name: 'Loopback',
-        brief: "You're cycling through your own thinking. The conversation is happening inside you alone.",
-        situation: 'You are sending and receiving from the same place. This can produce clarity when there is real material to work through. It can also become a way of staying in motion without going anywhere. The question is whether this loop is producing something or just repeating.',
-        reflection: 'Notice how many times you have been around this loop. If the count is high, something outside the loop may be needed.',
+        brief: 'You are in conversation with yourself.',
+        tech: 'Loopback is when a system communicates with itself. The signal goes out and returns to the same place. It is often used for testing, or for two programs on the same machine to talk to each other.',
+        situation: 'You are circling through something on your own.',
+        examples: [
+            'Rehearsing a conversation in your head',
+            'Drafting an unsent message',
+            'Ruminating on something that happened',
+            'Imagining what someone would say',
+            'Turning a decision over repeatedly',
+            'Processing a feeling internally',
+        ],
+        reflection: 'Is this loop helping you work something out, repeating itself, or replacing a step that needs to happen outside it?',
     },
     {
         id: 5,
