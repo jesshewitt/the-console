@@ -18,11 +18,11 @@ class Reading {
         const newSeed = Math.floor(Math.random() * 1e9).toString(36)
         return html`
             <h2>${card.name}</h2>
+            <p class="card-brief">${card.brief}</p>
+            <h3>Situation</h3>
             <p>${card.situation}</p>
-            <h3>Underneath</h3>
-            <p>${card.underneath}</p>
-            <h3>A move</h3>
-            <p>${card.move}</p>
+            <h3>Reflection</h3>
+            <p>${card.reflection}</p>
             <p class="reading-actions">
                 <a href="/reading/${newSeed}">Draw another card</a>
             </p>

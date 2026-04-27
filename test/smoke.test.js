@@ -36,7 +36,7 @@ test('cards data has 24 entries', () => {
 })
 
 test('cards data shape is intact', () => {
-    const requiredFields = ['id', 'name', 'situation', 'underneath', 'move']
+    const requiredFields = ['id', 'name', 'brief', 'situation', 'reflection']
     const names = new Set()
     const ids = new Set()
 
@@ -46,9 +46,9 @@ test('cards data shape is intact', () => {
         }
         assert.ok(typeof c.id === 'number', `card id is not a number`)
         assert.ok(typeof c.name === 'string' && c.name.length > 0, `card ${c.id} name is empty`)
+        assert.ok(typeof c.brief === 'string' && c.brief.length > 0, `card ${c.id} brief is empty`)
         assert.ok(typeof c.situation === 'string' && c.situation.length > 0, `card ${c.id} situation is empty`)
-        assert.ok(typeof c.underneath === 'string' && c.underneath.length > 0, `card ${c.id} underneath is empty`)
-        assert.ok(typeof c.move === 'string' && c.move.length > 0, `card ${c.id} move is empty`)
+        assert.ok(typeof c.reflection === 'string' && c.reflection.length > 0, `card ${c.id} reflection is empty`)
         names.add(c.name)
         ids.add(c.id)
     }

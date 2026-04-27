@@ -20,11 +20,11 @@ class Card {
         }
         return html`
             <h2 class="card-name">${card.name}</h2>
-            <p class="card-situation">${card.situation}</p>
-            <h3>Underneath</h3>
-            <p>${card.underneath}</p>
-            <h3>A move</h3>
-            <p>${card.move}</p>
+            <p class="card-brief">${card.brief}</p>
+            <h3>Situation</h3>
+            <p>${card.situation}</p>
+            <h3>Reflection</h3>
+            <p>${card.reflection}</p>
         `
     }
 }
