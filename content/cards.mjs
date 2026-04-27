@@ -6,7 +6,17 @@ export const cards = [
         id: 1,
         name: 'Handshake',
         brief: 'Setup is complete and you are ready for action.',
-        situation: 'This might be a new job started, a relationship made official, a contract signed, a mentorship begun, or a team joined. The setup is done and what comes next is the actual work.',
+        tech: 'A handshake is the exchange that two systems use to establish a working connection. Each side confirms it can hear the other and they agree on the terms. Once it completes, the actual work can begin.',
+        situation: 'A new agreement is in place between two parties.',
+        examples: [
+            'A new job started',
+            'A relationship made official',
+            'A contract signed',
+            'A mentorship begun',
+            'A team joined',
+            'A treatment plan agreed on with a doctor',
+            'A creative collaboration begun',
+        ],
         reflection: 'Take a moment to consider all of the ways this change will impact your life. Is there anything you can do to feel prepared?',
     },
     {
