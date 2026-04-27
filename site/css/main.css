@@ -1,28 +1,28 @@
-/* Space Grotesk: distinctive geometric sans, slightly off-kilter modern feel. */
+/* Manrope: distinctive geometric sans, slightly off-kilter modern feel. */
 @font-face {
-    font-family: 'Space Grotesk';
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../fonts/space-grotesk-latin.woff2') format('woff2');
+    src: url('../fonts/manrope-latin.woff2') format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-    font-family: 'Space Grotesk';
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../fonts/space-grotesk-latin-ext.woff2') format('woff2');
+    src: url('../fonts/manrope-latin-ext.woff2') format('woff2');
     unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
-    font-family: 'Space Grotesk';
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url('../fonts/space-grotesk-latin-bold.woff2') format('woff2');
+    src: url('../fonts/manrope-latin-bold.woff2') format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -74,17 +74,10 @@ a {
 body {
     background-color: var(--bg);
     color: var(--text);
-    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-family: 'Manrope', system-ui, sans-serif;
     letter-spacing: 0.01em;
     margin: 0 auto;
     padding: 0 10% 2rem 10%;
-}
-
-/* Match the breathing room that an h2 (margin-top: 1em) gives the about/home pages,
-   so detail pages don't feel cramped under the nav. Scoped to the first svg
-   in main so inline SVGs inside .changingHexagrams aren't pushed around. */
-main > svg.svglines:first-of-type {
-    margin-top: 1em;
 }
 
 .black {
@@ -98,127 +91,6 @@ main > svg.svglines:first-of-type {
 }
 
 .comment {
-    color: var(--text-muted);
-}
-
-/* Trigram list as a 4-column grid: glyph, name, attribute, image. */
-.tri-grid {
-    display: grid;
-    grid-template-columns: auto auto auto 1fr;
-    gap: 0.15em 0.75em;
-    list-style: none;
-    padding: 0;
-}
-
-.tri-grid > li {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 1 / -1;
-    gap: inherit;
-    align-items: center;
-}
-
-.tri-glyph {
-    color: var(--accent);
-}
-
-/* Trigram detail heading: the unicode glyph is taller than the surrounding text,
-   so flex-align it to center rather than baseline. */
-.trigram-heading {
-    display: flex;
-    align-items: center;
-    gap: 0.3em;
-}
-
-/* Trigram rows center-align: the unicode glyph is taller than the surrounding text. */
-.tri-grid .hex-row {
-    align-items: center;
-}
-
-/* Trigram detail page: structured associations as a two-column term/value grid. */
-.trigram-info {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    gap: 0.15em 1em;
-    margin: 0.75em 0 1em 0;
-    padding-bottom: 0;
-}
-
-.trigram-info dt {
-    color: var(--text-muted);
-}
-
-.trigram-info dd {
-    margin: 0;
-}
-
-/* The comma-separated symbol list on the trigram page; default-ish but tighter. */
-.trigram-symbols {
-    margin: 0 0 0.75em 0;
-    padding-bottom: 0;
-}
-
-/* Compact "Above: ... / Below: ..." trigram pair on the hexagram detail page. */
-.trigram-pair {
-    margin: 0.5em 0 1em 0;
-}
-
-.trigram-pair li {
-    margin: 0.15em 0;
-}
-
-.trigram-pair a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.trigram-pair a:hover,
-.trigram-pair a:focus-visible {
-    color: var(--accent);
-}
-
-/* Hexagram list as a 5-column grid: number, glyph, name, description, English.
-   Subgrid on the <li> and the <a> means the columns align across all rows even
-   though the link wraps an entire row's worth of content. */
-.hex-grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto 1fr;
-    gap: 0 0.75em;
-    list-style: none;
-    padding: 0;
-}
-
-.hex-grid > li {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 1 / -1;
-}
-
-.hex-row {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 1 / -1;
-    gap: inherit;
-    text-decoration: none;
-    color: inherit;
-    align-items: baseline;
-}
-
-.hex-row:hover,
-.hex-row:focus-visible {
-    color: var(--accent);
-}
-
-.hex-glyph {
-    color: var(--accent);
-}
-
-.hex-num {
-    text-align: right;
-    font-variant-numeric: tabular-nums;
-}
-
-.hex-cename {
     color: var(--text-muted);
 }
 
@@ -285,314 +157,59 @@ ul {
     padding-left: 0;
 }
 
-.changingHexagrams {
-    display: grid;
-    grid-template-columns: min-content max-content min-content;
-    gap: 1em 1em;
-    align-items: center;
-}
-
 @media screen and (max-width: 800px) {
     body {
         padding: 0 5%;
     }
 }
 
-/* SVG hexagram and trigram glyphs */
-.glyph {
-    display: inline-block;
-    color: var(--accent);
-    height: 1.2em;
-    width: auto;
-    vertical-align: middle;
-}
-
-.glyph-large {
-    height: 4em;
-}
-
-/* Trigram grid: glyph, name, coreSense */
-.tri-grid {
+/* Card list: id, name, situation */
+.card-list {
     display: grid;
     grid-template-columns: auto auto 1fr;
-    gap: 0.3em 0.75em;
-    list-style: none;
-    padding: 0;
-}
-
-.tri-grid > li {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 1 / -1;
-}
-
-.tri-row {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 1 / -1;
-    gap: inherit;
-    text-decoration: none;
-    color: inherit;
-    align-items: center;
-    padding: 0.3em 0;
-}
-
-.tri-row:hover,
-.tri-row:focus-visible {
-    color: var(--accent);
-}
-
-.tri-glyph svg {
-    height: 1.2em;
-    width: auto;
-}
-
-.tri-name {
-    font-weight: bold;
-    letter-spacing: 0.05em;
-}
-
-.tri-sense {
-    color: var(--text-muted);
-}
-
-/* Hexagram grid: id, glyph, name, composition */
-.hex-grid {
-    display: grid;
-    grid-template-columns: auto auto auto 1fr;
     gap: 0 0.75em;
     list-style: none;
     padding: 0;
 }
 
-.hex-grid > li {
+.card-list > li {
     display: grid;
     grid-template-columns: subgrid;
     grid-column: 1 / -1;
 }
 
-.hex-row {
+.card-row {
     display: grid;
     grid-template-columns: subgrid;
     grid-column: 1 / -1;
     gap: inherit;
     text-decoration: none;
     color: inherit;
-    align-items: center;
+    align-items: baseline;
     padding: 0.2em 0;
 }
 
-.hex-row:hover,
-.hex-row:focus-visible {
+.card-row:hover,
+.card-row:focus-visible {
     color: var(--accent);
 }
 
-.hex-num {
+.card-num {
     text-align: right;
     font-variant-numeric: tabular-nums;
     color: var(--text-muted);
 }
 
-.hex-glyph svg {
-    height: 1.2em;
-    width: auto;
-}
-
-.hex-name {
+.card-name {
     font-weight: bold;
 }
 
-.hex-composition {
+.card-situation {
     color: var(--text-muted);
     font-size: 0.9em;
-}
-
-/* Trigram detail page */
-.tri-glyph-large svg {
-    height: 1.6em;
-    vertical-align: middle;
-    margin-right: 0.4em;
-}
-
-.tri-pattern {
-    color: var(--text-muted);
-    font-size: 0.9em;
-    margin-top: -0.5em;
-}
-
-.tri-range {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    gap: 0.3em 1em;
-    margin: 0.5em 0;
-}
-
-.tri-range dt {
-    color: var(--text-muted);
-}
-
-.tri-range dd {
-    margin: 0;
-}
-
-/* Compact hexagram list used on trigram detail pages */
-.hex-grid-compact {
-    display: grid;
-    grid-template-columns: auto auto 1fr;
-    gap: 0.2em 0.75em;
-    list-style: none;
-    padding: 0;
-}
-
-.hex-grid-compact > li {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 1 / -1;
-}
-
-.hex-row-compact {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 1 / -1;
-    gap: inherit;
-    text-decoration: none;
-    color: inherit;
-    align-items: center;
-    padding: 0.1em 0;
-}
-
-.hex-row-compact:hover,
-.hex-row-compact:focus-visible {
-    color: var(--accent);
-}
-
-.hex-row-compact .hex-glyph svg {
-    height: 1em;
-}
-
-/* Hexagram detail page */
-.hex-heading {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    flex-wrap: wrap;
-}
-
-.hex-glyph-large svg {
-    height: 1.5em;
-}
-
-.hex-num-large {
-    color: var(--text-muted);
-    font-variant-numeric: tabular-nums;
-}
-
-.hex-composition-detail {
-    color: var(--text-muted);
-    font-size: 0.95em;
-    margin-top: -0.5em;
-}
-
-.hex-composition-detail a {
-    color: inherit;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.hex-composition-detail a:hover {
-    color: var(--accent);
-}
-
-.hex-comp-label {
-    font-size: 0.85em;
-    margin-right: 0.25em;
-}
-
-.hex-arrow {
-    margin: 0 0.25em;
-}
-
-.hex-sense {
-    font-size: 1.1em;
-}
-
-.hex-image {
-    line-height: 1.55;
-}
-
-.hex-channels {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    margin: 1em 0;
-}
-
-.hex-channel {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto;
-    gap: 0.2em 0.5em;
-    align-items: center;
-    padding: 0.75em;
-    border: 1px solid var(--text-muted);
-    border-radius: 4px;
-}
-
-.hex-channel-glyph {
-    grid-row: 1 / 3;
-}
-
-.hex-channel-glyph svg {
-    height: 2em;
-}
-
-.hex-channel-label {
-    color: var(--text-muted);
-    font-size: 0.85em;
-}
-
-.hex-channel p {
-    grid-column: 1 / 3;
-    margin: 0.25em 0 0 0;
-}
-
-@media (max-width: 600px) {
-    .hex-channels {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* Reading page */
-.reading-seed {
-    color: var(--text-muted);
-    font-size: 0.9em;
-    margin-bottom: 0;
-}
-
-.reading-seed-value {
-    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
-    background: rgba(128, 128, 128, 0.08);
-    padding: 0.1em 0.4em;
-    border-radius: 3px;
-}
-
-.reading-heading {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    flex-wrap: wrap;
-}
-
-.reading-num {
-    color: var(--text-muted);
-    font-variant-numeric: tabular-nums;
-}
-
-.reading-image {
-    line-height: 1.6;
-    font-size: 1.05em;
-}
-
 .reading-actions {
     margin-top: 2em;
     padding-top: 1em;

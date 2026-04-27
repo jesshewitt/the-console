@@ -1,13 +1,12 @@
 // vanilla js SPA framework, adapted from https://github.com/rishavs/vanillajs-spa
 
 import About        from './views/pages/about.js'
+import Card         from './views/pages/card.js'
 import Error404     from './views/pages/error404.js'
 import Footer       from './views/components/footer.js'
 import Header       from './views/components/header.js'
-import Hexagram     from './views/pages/hexagram.js'
 import Home         from './views/pages/home.js'
 import Reading      from './views/pages/reading.js'
-import Trigram      from './views/pages/trigram.js'
 import {cycleTheme} from './theme.js'
 
 
@@ -15,8 +14,7 @@ import {cycleTheme} from './theme.js'
 const routes = {
     '/': Home,
     '/about': About,
-    '/trigram/:value': Trigram,
-    '/hexagram/:id': Hexagram,
+    '/card/:id': Card,
     '/reading/:seed': Reading,
     '/reading': Reading
 }
@@ -49,14 +47,12 @@ const router = () => {
     let request = parseRequestURL()
     let parsedURL = (request.resource ? '/' + request.resource : '/') + (request.id ? '/:id' : '')
 
-    // trigram uses :value in the route definition but the parser key still uses /:id positionally
     // try the explicit route variant first, then fall back to /:id form
     let page = routes[parsedURL]
 
     if (!page && request.resource && request.id) {
-        const valueRoute = '/' + request.resource + '/:value'
-        const seedRoute  = '/' + request.resource + '/:seed'
-        page = routes[valueRoute] || routes[seedRoute]
+        const seedRoute = '/' + request.resource + '/:seed'
+        page = routes[seedRoute]
     }
 
     page = page || Error404
