@@ -1,8 +1,7 @@
 import {test} from 'node:test'
 import assert from 'node:assert/strict'
 import {seeded} from '../site/js/rng.js'
-import trigrams from '../site/data/trigrams.json' with { type: 'json' }
-import hexagrams from '../site/data/hexagrams.json' with { type: 'json' }
+import cards from '../site/data/cards.json' with { type: 'json' }
 
 // PRNG tests
 
@@ -22,70 +21,41 @@ test('seeded rng differs across seeds', () => {
     assert.notDeepEqual(a, b)
 })
 
-test('coin-flip output is pinned for seed "test"', () => {
-    // Regression guard: seed "test" must always produce pattern 101110 (hexagram 47 Attend).
+test('card cast is pinned for seed "test"', () => {
+    // Regression guard: seed "test" must always produce card id 19 (Fork).
     // If the PRNG implementation changes, this test will catch it.
-    const rng = seeded('test')
-    const bits = Array.from({length: 6}, () => rng() > 0.5 ? '1' : '0')
-    assert.equal(bits.join(''), '101110')
+    const rand = seeded('test')
+    const id = Math.floor(rand() * 24) + 1
+    assert.equal(id, 19)
 })
 
-// Trigram data shape tests
+// Card data shape tests
 
-test('trigrams data shape is intact', () => {
-    assert.equal(trigrams.length, 8)
+test('cards data has 24 entries', () => {
+    assert.equal(cards.length, 24)
+})
 
-    const requiredFields = ['id', 'pattern', 'name', 'glyph', 'coreSense', 'description', 'range', 'inCombination']
-    const requiredRangeFields = ['innerLife', 'relationships', 'work', 'body', 'world']
-    const patterns = new Set()
+test('cards data shape is intact', () => {
+    const requiredFields = ['id', 'name', 'situation', 'underneath', 'move']
     const names = new Set()
     const ids = new Set()
 
-    for (const t of trigrams) {
+    for (const c of cards) {
         for (const f of requiredFields) {
-            assert.ok(f in t, `trigram ${t.name ?? t.id} missing field "${f}"`)
+            assert.ok(f in c, `card ${c.id ?? '?'} missing field "${f}"`)
         }
-        for (const f of requiredRangeFields) {
-            assert.ok(f in t.range, `trigram ${t.name} missing range.${f}`)
-        }
-        assert.match(t.pattern, /^[01]{3}$/, `trigram ${t.name} pattern not a 3-char binary string`)
-        patterns.add(t.pattern)
-        names.add(t.name)
-        ids.add(t.id)
+        assert.ok(typeof c.id === 'number', `card id is not a number`)
+        assert.ok(typeof c.name === 'string' && c.name.length > 0, `card ${c.id} name is empty`)
+        assert.ok(typeof c.situation === 'string' && c.situation.length > 0, `card ${c.id} situation is empty`)
+        assert.ok(typeof c.underneath === 'string' && c.underneath.length > 0, `card ${c.id} underneath is empty`)
+        assert.ok(typeof c.move === 'string' && c.move.length > 0, `card ${c.id} move is empty`)
+        names.add(c.name)
+        ids.add(c.id)
     }
 
-    assert.equal(patterns.size, 8, 'trigram patterns are not all unique')
-    assert.equal(names.size, 8, 'trigram names are not all unique')
-    assert.deepEqual([...ids].sort((a, b) => a - b), [1, 2, 3, 4, 5, 6, 7, 8])
-})
-
-// Hexagram data shape tests
-
-test('hexagrams data shape is intact', () => {
-    assert.equal(hexagrams.length, 64)
-
-    const requiredFields = ['id', 'pattern', 'name', 'glyph', 'lower', 'upper', 'coreSense', 'image']
-    const trigramNames = new Set(trigrams.map(t => t.name))
-    const patterns = new Set()
-    const names = new Set()
-    const ids = new Set()
-
-    for (const h of hexagrams) {
-        // Use "in" check so null glyph passes (undefined would fail)
-        for (const f of requiredFields) {
-            assert.ok(f in h, `hexagram ${h.id} (${h.name ?? '?'}) missing field "${f}"`)
-        }
-        assert.match(h.pattern, /^[01]{6}$/, `hexagram ${h.id} pattern not a 6-char binary string`)
-        assert.ok(trigramNames.has(h.lower), `hexagram ${h.id} lower "${h.lower}" is not a valid trigram name`)
-        assert.ok(trigramNames.has(h.upper), `hexagram ${h.id} upper "${h.upper}" is not a valid trigram name`)
-        patterns.add(h.pattern)
-        names.add(h.name)
-        ids.add(h.id)
-    }
-
-    assert.equal(patterns.size, 64, 'hexagram patterns are not all unique')
-    assert.equal(names.size, 64, 'hexagram names are not all unique')
-    assert.equal(ids.size, 64, 'hexagram IDs are not all unique')
-    assert.equal(Math.min(...ids), 1)
-    assert.equal(Math.max(...ids), 64)
+    assert.equal(names.size, 24, 'card names are not all unique')
+    assert.equal(ids.size, 24, 'card ids are not all unique')
+    assert.equal(Math.min(...ids), 1, 'lowest card id is not 1')
+    assert.equal(Math.max(...ids), 24, 'highest card id is not 24')
+    assert.deepEqual([...ids].sort((a, b) => a - b), Array.from({length: 24}, (_, i) => i + 1), 'card ids are not 1-24 with no gaps')
 })
