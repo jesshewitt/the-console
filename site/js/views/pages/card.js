@@ -21,8 +21,17 @@ class Card {
         return html`
             <h2 class="card-name">${card.name}</h2>
             <p class="card-brief">${card.brief}</p>
+            ${card.tech ? html`
+                <h3>Tech</h3>
+                <p>${card.tech}</p>
+            ` : ''}
             <h3>Situation</h3>
             <p>${card.situation}</p>
+            ${card.examples && card.examples.length ? html`
+                <ul class="card-examples">
+                    ${card.examples.map(ex => html`<li>${ex}</li>`)}
+                </ul>
+            ` : ''}
             <h3>Reflection</h3>
             <p>${card.reflection}</p>
         `

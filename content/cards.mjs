@@ -12,9 +12,20 @@ export const cards = [
     {
         id: 2,
         name: 'Connection Refused',
-        brief: 'Something or someone is actively shutting you out. You can feel the door being held against you.',
-        situation: 'The refusal is information. Whoever or whatever is shutting you out is telling you something about themselves, about you, or about what is between you. Worth listening to before reaching again.',
-        reflection: 'Pause and consider what the closed door is saying.',
+        brief: 'You got an answer, and the answer was no.',
+        tech: 'Connection Refused is a specific TCP error. The destination is reachable and the host responds, but it actively rejects the connection. The rejection is clear, immediate, and definitive.',
+        situation: 'A direct, unambiguous no.',
+        examples: [
+            'A job application rejected with a clear letter',
+            'A submission turned down',
+            'A friend or partner setting a hard boundary',
+            'Getting blocked on social media',
+            'A pitch declined',
+            'An invitation refused firmly',
+            'A romantic interest saying no plainly',
+            'A breakup that is clearly stated',
+        ],
+        reflection: 'What does this no tell you about yourself, the other party, or the timing? What new opportunities might arise from this apparent rejection?',
     },
     {
         id: 3,
