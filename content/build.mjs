@@ -1,11 +1,6 @@
-// Constructs site/data/trigrams.json and site/data/hexagrams.json
-// from inline JS object arrays in trigrams.mjs and hexagrams.mjs.
+// Constructs site/data/cards.json from inline JS object array in cards.mjs.
 import fs from 'node:fs/promises'
-import {trigrams} from './trigrams.mjs'
-import {hexagrams} from './hexagrams.mjs'
+import {cards} from './cards.mjs'
 
-await fs.writeFile('./site/data/trigrams.json', JSON.stringify(trigrams) + '\n')
-console.log(`wrote site/data/trigrams.json with ${trigrams.length} entries`)
-
-await fs.writeFile('./site/data/hexagrams.json', JSON.stringify(hexagrams) + '\n')
-console.log(`wrote site/data/hexagrams.json with ${hexagrams.length} entries`)
+await fs.writeFile('./site/data/cards.json', JSON.stringify(cards) + '\n')
+console.log(`wrote site/data/cards.json with ${cards.length} entries`)
