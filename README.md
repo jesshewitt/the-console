@@ -1,6 +1,6 @@
 # The Console
 
-A 24-card oracle deck. Each card names a recognizable life situation through a tech metaphor and offers something to notice and a move to consider. Cast a reading by entering a seed; the URL is the reading.
+A divination deck. Each card names a recognizable life situation through a tech metaphor and offers something to notice and a move to consider. Draw a card by entering a seed and the URL is the reading.
 
 ## Licensing
 

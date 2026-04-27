@@ -18,12 +18,11 @@ class Home {
         const seed = Math.floor(Math.random() * 1e9).toString(36)
         return html`
             <p>
-                A 24-card oracle deck.
-                <a href="/reading/${seed}">Cast a reading</a>
-                or browse the 24 cards.
+                A divination deck.
+                <a href="/reading/${seed}">Draw a card</a>
+                or look through the deck.
             </p>
 
-            <h2>Cards</h2>
             <ul class="card-list">
                 ${cards.map(cardRow)}
             </ul>

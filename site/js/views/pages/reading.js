@@ -24,7 +24,7 @@ class Reading {
             <h3>A move</h3>
             <p>${card.move}</p>
             <p class="reading-actions">
-                <a href="/reading/${newSeed}">Cast another reading</a>
+                <a href="/reading/${newSeed}">Draw another card</a>
             </p>
         `
     }
