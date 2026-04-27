@@ -15,7 +15,7 @@ export const cards = [
             'A mentorship begun',
             'A team joined',
             'A treatment plan agreed on with a doctor',
-            'A creative collaboration begun',
+            'A creative collaboration initiated',
         ],
         reflection: 'Take a moment to consider all of the ways this change will impact your life. Is there anything you can do to feel prepared?',
     },
