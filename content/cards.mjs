@@ -50,7 +50,7 @@ export const cards = [
             'A promise someone made that was never kept',
             'An apology you were owed that never came',
         ],
-        reflection: 'What might the silence be revealing about how mutual this was? Is there something you wanted that even a yes could not have fully given you?',
+        reflection: 'What were you really waiting for, beyond the literal response? What might it look like to give that to yourself, find it elsewhere, or release it?',
     },
     {
         id: 4,
