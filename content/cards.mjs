@@ -40,9 +40,17 @@ export const cards = [
     {
         id: 3,
         name: 'Timeout',
-        brief: 'The chance has passed. The waiting has run its course and something else takes its place.',
-        situation: 'The window that existed is done. This happens with conversations, decisions, opportunities, and moods alike. The situation has moved past the moment where the original response would have landed the same way.',
-        reflection: 'Look at what has changed since the waiting began. The new situation is the one worth orienting to.',
+        brief: 'You waited for a response, but it never arrived.',
+        tech: 'A timeout is when a system gives up waiting for a response. After a configured time, the request is treated as failed.',
+        situation: 'Silence where an answer was expected.',
+        examples: [
+            'You applied for a job and never heard back',
+            'You asked someone out and they never responded',
+            'A friendship that quietly faded',
+            'A promise someone made that was never kept',
+            'An apology you were owed that never came',
+        ],
+        reflection: 'What might the silence be revealing about how mutual this was? Is there something you wanted that even a yes could not have fully given you?',
     },
     {
         id: 4,
