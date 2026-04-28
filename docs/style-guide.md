@@ -40,6 +40,7 @@ These have come up repeatedly. Apply absolutely.
 - Examples grounded in everyday life, multi-domain
 - Watch for word repetition across examples within one card (e.g. don't have "begun" in two scenarios in a list)
 - No filler phrases: "worth noting", "it is worth", "essentially", "simply put"
+- Metaphor stays in the card name and tech section. Brief, situation, examples, and reflection use plain human language for the actual experience, in words a person would use about their own life
 
 ## Field-specific guidance
 
@@ -50,12 +51,14 @@ These have come up repeatedly. Apply absolutely.
 - No detail just for completeness; only what helps explain the metaphor
 - Avoid technical comparisons like "this is distinct from..." (defining-by-negation)
 - No protocol-level detail unless the metaphor depends on it (no SYN/ACK, no specific HTTP error codes unless directly relevant)
+- No commentary on how the term maps to life — leave the mapping to situation, examples, and reflection. Tech explains the term, not interprets it
 
 ### `situation`
 
 - One short, direct line
 - No "the unifying thread is", no "this might be", no "in essence"
 - Just states what kind of moment the card describes
+- Human-relatable framing in plain language. Prefer direct phrasings ("You are the connection between two or more separate worlds") over abstract nominalizations ("Carrying meaning across two contexts")
 
 ### `examples`
 
@@ -65,6 +68,11 @@ These have come up repeatedly. Apply absolutely.
 - Short phrases or short clauses, not full paragraphs
 - Concrete enough to recognize immediately
 - Avoid redundancy: if two examples differ only by what kind of message was sent (text, email, etc.), consolidate
+- Universality: each example should be recognizable to most adults across many walks of life. A scenario that requires a specific profession, identity, or background to recognize narrows the card's reach. Aim for moments most readers can locate themselves in
+- Form: each card uses one form across all examples, picked by what fits the card:
+  - **Gerund form** ("Verbing X") when the consulter is the agent of the moment: "Rehearsing a conversation"
+  - **Noun-phrase form** ("A noun [modifier]") when the consulter is the recipient or witness: "A pitch declined", "A friendship that quietly fades". Internal grammar varies (past-participle modifiers, relative clauses, prepositional phrases, bare nouns). Don't force a single sub-pattern
+  - Pick one form per card. Don't mix forms within a card
 
 ### `reflection`
 
@@ -73,6 +81,7 @@ These have come up repeatedly. Apply absolutely.
 - Open-ended; doesn't tell the reader what to do
 - Stays grounded in what the situation reveals about the consulter, others, or circumstances
 - No prescriptions, no instructions
+- Frame toward insight, growth, or peace. The card may name something hard, but the reflection points toward what can be understood, learned, or settled into. Avoid framing the reflection as a problem to manage or a cost to mitigate
 
 ## Process
 
