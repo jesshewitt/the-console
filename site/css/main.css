@@ -209,6 +209,12 @@ ul {
     font-size: 0.9em;
 }
 
+/* Examples list on card and reading pages */
+.card-examples {
+    color: var(--text-muted);
+    font-size: 0.95em;
+}
+
 /* Reading page */
 .reading-actions {
     margin-top: 2em;
