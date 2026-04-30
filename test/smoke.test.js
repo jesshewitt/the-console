@@ -36,7 +36,7 @@ test('cards data has 24 entries', () => {
 })
 
 test('cards data shape is intact', () => {
-    const requiredFields = ['id', 'name', 'brief', 'situation', 'reflection']
+    const requiredFields = ['id', 'name', 'type', 'brief', 'situation', 'reflection']
     const names = new Set()
     const ids = new Set()
 
@@ -58,4 +58,18 @@ test('cards data shape is intact', () => {
     assert.equal(Math.min(...ids), 1, 'lowest card id is not 1')
     assert.equal(Math.max(...ids), 24, 'highest card id is not 24')
     assert.deepEqual([...ids].sort((a, b) => a - b), Array.from({length: 24}, (_, i) => i + 1), 'card ids are not 1-24 with no gaps')
+})
+
+test('card types are evenly distributed across the four dimensions', () => {
+    const validTypes = new Set(['connection', 'state', 'time', 'change'])
+    const counts = {connection: 0, state: 0, time: 0, change: 0}
+
+    for (const c of cards) {
+        assert.ok(validTypes.has(c.type), `card ${c.id} has invalid type "${c.type}"`)
+        counts[c.type]++
+    }
+
+    for (const t of validTypes) {
+        assert.equal(counts[t], 6, `type "${t}" should have 6 cards, got ${counts[t]}`)
+    }
 })

@@ -163,10 +163,10 @@ ul {
     }
 }
 
-/* Card list: id, name, situation */
+/* Card list: id, name, type, brief */
 .card-list {
     display: grid;
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: auto auto auto 1fr;
     gap: 0 0.75em;
     list-style: none;
     padding: 0;
@@ -207,6 +207,13 @@ ul {
 .card-situation {
     color: var(--text-muted);
     font-size: 0.9em;
+}
+
+.card-type {
+    color: var(--text-muted);
+    font-size: 0.85em;
+    text-transform: capitalize;
+    margin: 0 0 0.5em 0;
 }
 
 /* Examples list on card and reading pages */

@@ -5,6 +5,7 @@ export const cards = [
     {
         id: 1,
         name: 'Handshake',
+        type: 'connection',
         brief: 'Setup is complete and you are ready for action.',
         tech: 'A handshake is the exchange that two systems use to establish a working connection. Each side confirms it can hear the other and they agree on the terms. Once it completes, the actual work can begin.',
         situation: 'A new agreement is in place between two parties.',
@@ -22,6 +23,7 @@ export const cards = [
     {
         id: 2,
         name: 'Connection Refused',
+        type: 'connection',
         brief: 'You got an answer, and the answer was no.',
         tech: 'Connection Refused is a specific TCP error. The destination is reachable and the host responds, but it actively rejects the connection. The rejection is clear, immediate, and definitive.',
         situation: 'A direct, unambiguous no.',
@@ -37,6 +39,7 @@ export const cards = [
     {
         id: 3,
         name: 'Timeout',
+        type: 'time',
         brief: 'You waited for a response, but it never arrived.',
         tech: 'A timeout is when a system gives up waiting for a response. After a configured time, the request is treated as failed.',
         situation: 'Silence where an answer was expected.',
@@ -52,6 +55,7 @@ export const cards = [
     {
         id: 4,
         name: 'Loopback',
+        type: 'connection',
         brief: 'You are in conversation with yourself.',
         tech: 'Loopback is when a system communicates with itself. The signal goes out and returns to the same place. It is often used for testing, or for two programs on the same machine to talk to each other.',
         situation: 'You are circling through something on your own.',
@@ -67,6 +71,7 @@ export const cards = [
     {
         id: 5,
         name: 'Bridge',
+        type: 'connection',
         brief: 'A bridge between two worlds.',
         tech: 'A network bridge connects two network segments so traffic flows between them. More broadly, a bridge links two systems built on different terms.',
         situation: 'You are the connection between two or more separate realms.',
@@ -82,6 +87,7 @@ export const cards = [
     {
         id: 6,
         name: 'Buffer Full',
+        type: 'state',
         brief: "You're already at your limit, and more keeps adding pressure.",
         tech: "A buffer is temporary storage that holds data while it's moving from one place to another. When the buffer fills up, no new input can be accepted until something has been processed out.",
         situation: 'Everything pressing on you at once.',
@@ -99,6 +105,7 @@ export const cards = [
     {
         id: 7,
         name: 'Stale Cache',
+        type: 'state',
         brief: "You're working from outdated information.",
         tech: 'A cache stores a copy of data so it can be retrieved quickly without going back to the original source. The cache becomes stale when the original changes but the copy stays the same.',
         situation: 'Going by what used to be true.',
@@ -115,6 +122,7 @@ export const cards = [
     {
         id: 8,
         name: 'Memory Leak',
+        type: 'state',
         brief: 'Something keeps quietly draining your attention.',
         tech: 'A memory leak is when a program holds onto memory past when it needs it. The held memory builds up over time, and the program slows down as more capacity gets taken.',
         situation: 'Something keeps pulling at you, again and again.',
@@ -130,6 +138,7 @@ export const cards = [
     {
         id: 9,
         name: 'Crash',
+        type: 'change',
         brief: 'Something has suddenly stopped, and is now gone.',
         tech: 'A crash is when a system stops running suddenly because of an error that broke it. The state at the time of the crash is often lost, and the system has to be restarted.',
         situation: 'A sudden ending.',
@@ -145,6 +154,7 @@ export const cards = [
     {
         id: 10,
         name: 'Restore',
+        type: 'state',
         brief: 'Help is here, and you are coming back.',
         tech: 'A restore brings back data or system state from a backup. When something is lost, broken, or corrupted, the saved copy is used to return the system to a previous good state.',
         situation: 'Being supported while you recover.',
@@ -160,6 +170,7 @@ export const cards = [
     {
         id: 11,
         name: 'Echo',
+        type: 'time',
         brief: 'Whatever you put out comes back to you unchanged.',
         tech: 'An echo is the return of a signal in the same form it was sent. The system bounces back what was put in, with nothing new added.',
         situation: 'You keep hearing what you already believe.',
@@ -174,6 +185,7 @@ export const cards = [
     {
         id: 12,
         name: 'Static',
+        type: 'connection',
         brief: "What you're trying to hear or say is getting lost in too much noise.",
         tech: 'Static is random noise that gets mixed into a transmission and makes the actual signal hard to hear. The noise can come from many sources at once.',
         situation: 'Too much noise around what matters.',
@@ -190,23 +202,26 @@ export const cards = [
     },
     {
         id: 13,
-        name: 'Trace',
-        brief: 'Looking back, you are starting to see how you got here.',
-        tech: 'A trace is a record of what a program did, step by step. Following it backward reveals the path that led to a particular outcome, and often shows why something happened the way it did.',
-        situation: 'Connecting dots in hindsight.',
+        name: 'Heartbeat',
+        type: 'time',
+        brief: 'A steady rhythm that keeps something alive.',
+        tech: 'A heartbeat is a regular signal sent at fixed intervals so other systems know a process is still alive. When the heartbeats stop, the system is presumed to have failed.',
+        situation: 'Small steady actions that maintain something.',
         examples: [
-            'Looking back at a relationship and seeing it for what it really was',
-            'Understanding now why a friendship ended when it did',
-            'Tracing how a habit got started',
-            'Realizing how something said long ago has affected you',
-            'Recognizing a pattern in your own behavior',
-            "Connecting dots between events",
+            'Calling your parents every Sunday',
+            'Going to therapy weekly even when you feel fine',
+            'Doing your morning routine even on hard days',
+            'Showing up to a hobby practice on schedule',
+            'Tending to the basics each day (eating, sleeping, moving)',
+            'Maintaining a small daily ritual that grounds you',
+            'Keeping in touch with someone through brief regular messages',
         ],
-        reflection: "What do you see now that you couldn't see before? What can you learn from it?",
+        reflection: 'What are you maintaining through small steady action? What does this consistency make possible?',
     },
     {
         id: 14,
         name: 'Throttled',
+        type: 'state',
         brief: "Holding something back.",
         tech: 'Throttling is when a system intentionally limits the rate of output. The full capacity is there, but only a portion is allowed through at any time.',
         situation: 'Not fully sharing everything that you could.',
@@ -222,6 +237,7 @@ export const cards = [
     {
         id: 15,
         name: 'Idle',
+        type: 'state',
         brief: 'You have time and capacity, and nothing is required of you.',
         tech: 'Idle is when a system has capacity available with nothing currently using it. The system is ready and waiting, with no active work to do.',
         situation: 'Free time with no demands.',
@@ -237,6 +253,7 @@ export const cards = [
     {
         id: 16,
         name: 'Polling',
+        type: 'time',
         brief: "You keep checking for something that hasn't happened yet.",
         tech: 'Polling is when a system repeatedly checks for an update at regular intervals. Each check uses resources whether or not anything has changed.',
         situation: 'Repeatedly checking while you wait.',
@@ -251,6 +268,7 @@ export const cards = [
     {
         id: 17,
         name: 'Sync',
+        type: 'time',
         brief: 'Things are coming together at the right time.',
         tech: 'Sync is when two or more systems align in time so their actions happen together, or they reach the same state at once. The coordination lets them work as one.',
         situation: 'Multiple things happening in the same moment.',
@@ -267,6 +285,7 @@ export const cards = [
     {
         id: 18,
         name: 'Latency',
+        type: 'time',
         brief: "There's a long gap between what your input and the response.",
         tech: 'Latency is the delay between when something is sent and when it arrives. The signal is in transit during this time.',
         situation: 'Time passing between cause and effect.',
@@ -282,6 +301,7 @@ export const cards = [
     {
         id: 19,
         name: 'Fork',
+        type: 'change',
         brief: 'Two paths are opening up and a choice is necessary.',
         tech: 'A fork is when a single process splits into two or more separate paths. From the fork, each path develops on its own.',
         situation: 'A choice between paths.',
@@ -297,6 +317,7 @@ export const cards = [
     {
         id: 20,
         name: 'Deadlock',
+        type: 'connection',
         brief: 'Both sides are stuck, each waiting on the other to take action.',
         tech: 'A deadlock is when two or more processes are each waiting for the other to release something. Each has what the other needs, and progress stops on both sides.',
         situation: 'Two parties waiting for the other to move first.',
@@ -310,6 +331,7 @@ export const cards = [
     {
         id: 21,
         name: 'Merge',
+        type: 'change',
         brief: 'Two separate things are coming together.',
         tech: 'A merge is when two separate branches of work are brought back into one. The combined result includes the changes from both.',
         situation: 'Separate streams joining.',
@@ -326,6 +348,7 @@ export const cards = [
     {
         id: 22,
         name: 'Garbage Collection',
+        type: 'change',
         brief: 'Letting go of what is no longer needed.',
         tech: 'Garbage collection is the automatic process by which a system reclaims memory that has been used up and is ready to be released. The reclaimed space becomes available for new work.',
         situation: 'Time to clear out what is finished.',
@@ -341,6 +364,7 @@ export const cards = [
     {
         id: 23,
         name: 'Patch',
+        type: 'change',
         brief: 'A quick fix to keep things going for now.',
         tech: 'A patch is a small, quick change made to fix a specific problem. It addresses the immediate issue and leaves deeper fixes for later.',
         situation: 'A temporary fix to bridge the gap.',
@@ -356,6 +380,7 @@ export const cards = [
     {
         id: 24,
         name: 'Reset',
+        type: 'change',
         brief: 'Starting over.',
         tech: 'A reset returns a system to its starting state. Whatever accumulated during use is cleared, and the system begins fresh.',
         situation: 'A fresh start.',

@@ -20,6 +20,7 @@ class Card {
         }
         return html`
             <h2 class="card-name">${card.name}</h2>
+            <p class="card-type">${card.type}</p>
             <p class="card-brief">${card.brief}</p>
             ${card.tech ? html`
                 <h3>Tech</h3>

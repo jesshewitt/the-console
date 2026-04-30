@@ -18,6 +18,7 @@ class Reading {
         const newSeed = Math.floor(Math.random() * 1e9).toString(36)
         return html`
             <h2>${card.name}</h2>
+            <p class="card-type">${card.type}</p>
             <p class="card-brief">${card.brief}</p>
             ${card.tech ? html`
                 <h3>Tech</h3>

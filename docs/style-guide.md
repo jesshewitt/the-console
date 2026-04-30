@@ -9,11 +9,21 @@ Each card has these fields:
 | Field | Shape | Purpose |
 |---|---|---|
 | `name` | string, capitalized tech metaphor | The card's identity |
+| `type` | `'connection'` \| `'state'` \| `'time'` \| `'change'` | Which dimension of the system frame this card belongs to |
 | `brief` | one short sentence | Plain-language read of what the card means at a glance |
 | `tech` | 2-3 sentences | Brief overview of what the term means in tech, accessible to a non-specialist. NOT a specification |
 | `situation` | one short opening line | Direct introduction to the examples. No rhetorical preamble |
 | `examples` | array of 5-8 short scenarios | Distinct life-moments the card describes |
 | `reflection` | 1-2 sentences, often questions | Invites thought without prescribing |
+
+The deck's worldview is systems-theoretic: situations have recognizable shape, and the same patterns recur. The four types are the fundamental dimensions any system has:
+
+- **`connection`** — relationships and channels between parts (how things relate)
+- **`state`** — the current configuration, what's stored and held (how things are)
+- **`time`** — temporal patterns: rhythms, delays, alignments (how time behaves)
+- **`change`** — moments of structural transformation (when shape shifts)
+
+The deck holds 6 cards per type, evenly distributed.
 
 ## Hard constraints (no exceptions)
 

@@ -6,6 +6,7 @@ const cardRow = card => html`
         <a href="/card/${card.id}" class="card-row">
             <span class="card-num">${card.id}.</span>
             <span class="card-name">${card.name}</span>
+            <span class="card-type">${card.type}</span>
             <span class="card-brief">${card.brief}</span>
         </a>
     </li>
