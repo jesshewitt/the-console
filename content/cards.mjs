@@ -18,7 +18,7 @@ export const cards = [
             'Agreeing to a treatment plan',
             'Initiating a creative collaboration',
         ],
-        reflection: 'Take a moment to consider all of the ways this change will impact your life. Is there anything you can do to feel prepared?',
+        reflection: 'A handshake is the multi-step exchange by which two systems confirm they can communicate and on what terms. Each side signals readiness, and the protocol completes only when both confirm. From this point forward, both are bound to what was agreed. The terms shape everything that follows, even when no one is tracking them anymore. The visible part of a handshake is the connection. The lasting part is the terms.',
     },
     {
         id: 2,
@@ -34,7 +34,7 @@ export const cards = [
             'A block on social media',
             'A rejection from a romantic interest',
         ],
-        reflection: 'What does this no tell you about yourself, the other party, or the timing? What new opportunities might arise from this apparent rejection?',
+        reflection: 'Connection Refused is the case where the destination is reachable and responsive but actively rejects the request. The rejection itself is a signal. The system is functioning and the answer has been delivered. Unlike silence or unreachability, the situation contains no ambiguity. A clear refusal closes a possibility with certainty, which is often more useful than a maybe.',
     },
     {
         id: 3,
@@ -50,7 +50,7 @@ export const cards = [
             'A promise that never gets fulfilled',
             'An apology that never comes',
         ],
-        reflection: 'What were you really waiting for, beyond the literal response? What might it look like to give that to yourself, find it elsewhere, or release it?',
+        reflection: 'A timeout is the moment a system stops waiting for a response that never came. The request was sent, a window of time passed, and no answer arrived. The other side might never have received the message, or might have received it and chosen not to reply. From this side, both look the same. A timeout is structurally ambiguous: it only tells you that nothing came back. Choosing to time out is a choice to stop waiting. The cause of the silence may remain unknown.',
     },
     {
         id: 4,
@@ -66,7 +66,7 @@ export const cards = [
             'Imagining what someone would say',
             'Wavering on a decision',
         ],
-        reflection: 'Is this loop helping you work something out, repeating itself, or replacing a step that needs to happen outside it?',
+        reflection: 'A loopback routes a signal from a system back to itself. Outputs become the next inputs, and no new information enters from outside. Closed loops are sometimes deliberate, used for calibration, self-test, or internal processing. They can also serve as a stand-in for the exchange that would actually resolve the situation. From inside the loop, both versions look the same. Only outside information can tell them apart.',
     },
     {
         id: 5,
@@ -82,7 +82,7 @@ export const cards = [
             "Mediating a conflict",
             'Connecting friends with coworkers',
         ],
-        reflection: 'What does connecting two worlds show you about each? What does comparing and contrasting them reveal to you?',
+        reflection: 'A bridge is the structural element that allows two systems built on different terms to interact. Each side communicates in its own form. To translate, the bridge has to hold both sets of terms at once. Neither endpoint does this. The bridge ends up knowing both forms, and the structure of what passes between them. From the middle, you see things about each side that the side cannot see about itself.',
     },
     {
         id: 6,
@@ -100,7 +100,7 @@ export const cards = [
             'Being pulled in too many directions',
             'Running from one thing to the next without a break',
         ],
-        reflection: 'Which of these things actually matter to you, and which just feel obligatory? What can you let go of to feel some relief?',
+        reflection: 'The system is at capacity. Inputs are arriving faster than they can be processed, and every system at this point either drops new input, queues it indefinitely, or applies backpressure to the source. There is no fourth option. The choice is being made now, with or without your awareness or consent. That, more than the overload itself, is usually what makes the experience hard.',
     },
     {
         id: 7,
@@ -117,7 +117,7 @@ export const cards = [
             'Going by social rules that have since evolved',
             'Holding on to opinions you formed long ago',
         ],
-        reflection: "How much of what you see here is what's truly there, and how much is what you've been expecting to see?",
+        reflection: 'A cache holds a copy of data taken at some point in the past. The system reads from the cache rather than the source, which is cheaper and faster. The cache becomes stale when the source changes but the copy stays the same. From inside the system, there is no automatic signal that the cache has gone stale. The system continues operating on the snapshot, producing results that are internally consistent and externally wrong. The structural problem is the gap between when the source changed and when the system caught up. During that gap, the system runs on confidence that no longer applies.',
     },
     {
         id: 8,
@@ -133,7 +133,7 @@ export const cards = [
             'A relived trauma',
             'A nagging health concern',
         ],
-        reflection: 'Why does this keep coming back to you? What might be there for you to notice or resolve?',
+        reflection: 'A memory leak is when a system holds onto information past when it needs it. Each instance is small. Their accumulation, over time, becomes the structural issue. Slow leaks are difficult to detect in the moment because the system continues running and capacity decreases gradually. What gets noticed is usually the effect: the system feels heavier, slower, or less responsive, without anything specific being clearly wrong.',
     },
     {
         id: 9,
@@ -149,7 +149,7 @@ export const cards = [
             'A job or career ending abruptly',
             'A mental or emotional breakdown',
         ],
-        reflection: 'What stays with you, even with this loss? What is it showing you about what matters the most?',
+        reflection: 'A crash is when a system stops running suddenly. State held in memory at the time of the break is lost. In computing, state written to durable storage survives, and the system can be restarted from it. In life, what is lost often cannot be restored. You move forward, changed by both what is gone and what remains.',
     },
     {
         id: 10,
@@ -165,7 +165,7 @@ export const cards = [
             'Recovery time your body or mind needed',
             'Slowly feeling like yourself again after a challenging time',
         ],
-        reflection: 'Who or what is showing up for you right now? How does it feel to receive this support?',
+        reflection: 'A restore brings back data or state from a saved copy. The saved state makes return possible after a failure. In computing, the recovered state is identical to what was saved. In life, recovery is rarely so clean. The experience itself changes the system that comes through it.',
     },
     {
         id: 11,
@@ -180,7 +180,7 @@ export const cards = [
             'Speaking to people who say what you want to hear',
             'Surrounding yourself with people who think just like you',
         ],
-        reflection: "What might change if you were willing to try something different? What might you be missing from outside the bubble?",
+        reflection: 'An echo is the return of a signal in the same form it was sent. The system sends, the same form returns, and over time the pattern repeats. When everything that comes back matches what was sent, the loop has closed to outside input. Confirmation that arrives from a closed loop is structurally indistinguishable from no information. A system that only hears its own signal cannot detect when it has drifted from reality.',
     },
     {
         id: 12,
@@ -198,7 +198,7 @@ export const cards = [
             "Feeling something honestly when there's too much else going on",
             'Sending a clear message in a crowded conversation',
         ],
-        reflection: "If you set aside the noise for a moment, what's the thing you'd actually want to hear or say?",
+        reflection: "Static is noise mixed into a transmission that makes the actual signal hard to hear. The signal is still present. Multiple sources contribute noise to the channel at once, and at some point the signal-to-noise ratio crosses a threshold where the message becomes inaudible. Recovery happens by reducing noise or strengthening signal. Most of the time, the message hasn't disappeared. The work is lowering the noise enough that what is already there becomes audible.",
     },
     {
         id: 13,
@@ -216,7 +216,7 @@ export const cards = [
             'Maintaining a small daily ritual that grounds you',
             'Keeping in touch with someone through brief regular messages',
         ],
-        reflection: 'What are you maintaining through small steady action? What does this consistency make possible?',
+        reflection: "A heartbeat is a regular signal sent at fixed intervals to indicate a system is still alive. The signal itself carries no content. Its existence is the message. Other systems listen for these signals to confirm presence, and when the signals stop, the sender is presumed failed. No single beat is definitive: the information is in the rhythm. Stability comes from the consistency of the pattern.",
     },
     {
         id: 14,
@@ -232,7 +232,7 @@ export const cards = [
             'Speaking carefully to avoid conflict',
             'Editing yourself avoid offending others',
         ],
-        reflection: "Why are you holding back here? Is it necessary?",
+        reflection: 'Throttling is when a system intentionally limits the rate of its output. The full capacity remains present. The constraint is structural, set somewhere in the configuration. A throttle exists for a reason: protecting downstream systems, conserving resources, meeting external rules. The constraint can outlast the conditions that produced it. A throttle that goes unexamined becomes invisible. Over time, the limit can stop being recognized as configurable. It may begin to feel like the actual edge of what is possible.',
     },
     {
         id: 15,
@@ -248,7 +248,7 @@ export const cards = [
             'An open Saturday afternoon',
             'Rest after hard work',
         ],
-        reflection: 'How does it feel to have this free time? What will you do with it, or nothing at all?',
+        reflection: 'Idle is when a system has capacity available with nothing currently using it. The system is fully operational, with no active demand. Capacity is present and uncalled. The state can be mistaken for malfunction by anyone who measures function by activity. Idle is the system working correctly. The discomfort comes from confusing activity with purpose.',
     },
     {
         id: 16,
@@ -263,7 +263,7 @@ export const cards = [
             'Watching for news of a pending event',
             'Checking the mail for an expected package'
         ],
-        reflection: 'Is checking repeatedly making you feel better or worse? What alternatives are there?',
+        reflection: 'Polling is the pattern of repeatedly checking for an update at regular intervals. Each check carries a cost, whether or not anything has changed. The pattern is necessary when there is no other way to be notified. It also serves as a substitute for being notified. When push is unavailable, pull keeps happening. Individual checks are cheap. The cumulative cost dominates. The cost of polling lives in the pattern itself. Over time, the rhythm of checking can become its own kind of anxiety.',
     },
     {
         id: 17,
@@ -280,13 +280,13 @@ export const cards = [
             'A health improvement',
             'An invitation',
         ],
-        reflection: "What's lining up for you right now? What becomes possible in this moment that wasn't possible before?",
+        reflection: 'Synchronization is the alignment of multiple systems in time so their actions or states coincide. Most systems run on independent rhythms. Sync is the rare condition where those rhythms briefly come into phase. When it happens, coordinated action becomes possible that no system could produce alone.',
     },
     {
         id: 18,
         name: 'Latency',
         type: 'time',
-        brief: "There's a long gap between what your input and the response.",
+        brief: "There's a long gap between your input and the response.",
         tech: 'Latency is the delay between when something is sent and when it arrives. The signal is in transit during this time.',
         situation: 'Time passing between cause and effect.',
         examples: [
@@ -296,7 +296,7 @@ export const cards = [
             "A new habit that hasn't changed your life yet",
             'A medical treatment that takes weeks to start working',
         ],
-        reflection: "What have you learned about this situation and about yourself while waiting for the result?",
+        reflection: 'Latency is the gap between when a signal is sent and when it arrives. During this gap, the signal is in transit. No information about the result is available until the gap closes. Latency is structurally distinct from failure. A delayed signal is still moving. It just has not arrived. The temptation during latency is to interpret what has not yet arrived. A signal in transit is not yet a result. Whatever you imagine while waiting will be overwritten by what actually arrives.',
     },
     {
         id: 19,
@@ -312,7 +312,7 @@ export const cards = [
             'Applying a quick fix or spending more effort to repair something properly',
             "Caring for yourself or helping someone else",
         ],
-        reflection: 'What changes will each option bring for you? What criteria are you using to decide?',
+        reflection: 'A fork splits a single process into two or more independent paths. From the fork point, each path develops on its own state and its own decisions. The past up to the fork is shared, but everything after diverges. The structural feature of a fork is that choosing produces direction. Up to the fork, all paths are possibilities. After the fork, the chosen path is the one that matters. Clarity can come from the choice itself.',
     },
     {
         id: 20,
@@ -326,7 +326,7 @@ export const cards = [
             'Two cars at an intersection, each waiting for the other to move first',
             'A negotiation frozen with both sides waiting for the other to budge',
         ],
-        reflection: "What might happen if you moved first, even without the signal you've been waiting for? What does the waiting itself cost you?",
+        reflection: 'A deadlock is when two or more parties are each waiting for the other to release something. Each holds what the other needs. Both are blocked. No party in a deadlock is wrong. The configuration produces the freeze. The deadlock can be broken when someone becomes willing to compromise. Until that happens, nothing will change.',
     },
     {
         id: 21,
@@ -343,7 +343,7 @@ export const cards = [
             'Becoming part of a new team or organization',
             'Combining your personal and professional lives',
         ],
-        reflection: "How might this meeting be a new beginning for everyone involved?",
+        reflection: 'A merge brings two things together so they can function as one. The result includes elements from both sides. Where they fit seamlessly, integration is automatic. Where they conflict, the differences must be resolved before the merge can complete. Two things coming together rarely fit smoothly without negotiation. That negotiation is the work of merging.',
     },
     {
         id: 22,
@@ -359,7 +359,7 @@ export const cards = [
             "Releasing a friendship that's run its course",
             "Donating books you've already read",
         ],
-        reflection: 'What in your life has stayed past its time? What might be possible if you let it go?',
+        reflection: 'Garbage collection is the process by which a system identifies and reclaims memory no longer in use. Reachability is the test: anything that can no longer be traced from somewhere active is treated as garbage. Garbage is the natural state of things that have served their purpose. The work of garbage collection is identifying what is no longer connected to anything still active. Past usefulness is irrelevant to the test. What makes something garbage is the absence of any current utility.',
     },
     {
         id: 23,
@@ -375,7 +375,7 @@ export const cards = [
             'Apologizing to quickly end a conflict',
             'Borrowing money to cover an unexpected expense',
         ],
-        reflection: "What's underneath this quick fix that you haven't addressed yet?",
+        reflection: 'A patch is a small, localized change that fixes a specific problem without changing the underlying structure. Something is malfunctioning. A targeted change is made to make the symptom go away. The system runs again. The underlying cause carries forward. Patches buy time. They also accumulate. A system covered in patches becomes harder to understand and harder to repair properly. A patch is the deferral of a repair. The time it buys can be used to design a proper fix.',
     },
     {
         id: 24,
@@ -392,6 +392,6 @@ export const cards = [
             'Moving to a new home',
             'Recovering from a serious illness',
         ],
-        reflection: "What's worth bringing with you from before? And what is better left behind?",
+        reflection: 'A reset clears whatever has accumulated. Variables, configuration, working memory, all of it is wiped. In computing, the system returns to its original initial conditions. In life, a reset rarely returns you to who you were before. It opens into a fresh new state, starting from where you are now.',
     },
 ]

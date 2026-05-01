@@ -86,12 +86,24 @@ These have come up repeatedly. Apply absolutely.
 
 ### `reflection`
 
-- Often a question or pair of questions
+A short paragraph (3-6 sentences) of food for thought drawn from systems theory. Systems vocabulary serves as the deck's distinctive contemplative register, the same role the esoteric tradition plays for tarot or classical Chinese cosmology plays for I-Ching. Used right, it gives reflections analytical depth without therapeutic register or preachiness.
+
+**Structure** (this is the reflection methodology):
+
+1. **State the structural pattern** — the systems fact this card describes
+2. **Mechanism** — how the pattern works
+3. **Categorical observation** — variants, options, or invariants of the pattern
+4. **Closing insight** — the actually-revealing thing about being inside this state, often unintuitive
+
+**Voice and constraints:**
+
+- Use systems theory vocabulary as the contemplative register: words like *capacity, throughput, channel, signal, feedback, backpressure, latency, reachability, persistence* are evocative without being jargon. The systems vocabulary is the deck's "mysticism"
+- Plain enough that a non-specialist can follow. Use the systems concept; explain in context where needed
+- Paragraph form, not questions
 - Multi-domain applicable
-- Open-ended; doesn't tell the reader what to do
-- Stays grounded in what the situation reveals about the consulter, others, or circumstances
 - No prescriptions, no instructions
-- Frame toward insight, growth, or peace. The card may name something hard, but the reflection points toward what can be understood, learned, or settled into. Avoid framing the reflection as a problem to manage or a cost to mitigate
+- The closing insight is the food-for-thought, not a directive. Don't tell the consulter what to contemplate; let the structural truth point at what's there
+- Frame toward structural understanding, not toward managing or fixing
 
 ## Process
 
