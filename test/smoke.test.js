@@ -22,7 +22,7 @@ test('seeded rng differs across seeds', () => {
 })
 
 test('card cast is pinned for seed "test"', () => {
-    // Regression guard: seed "test" must always produce card id 19 (Fork).
+    // Regression guard: seed "test" must always produce card id 19 (Patch).
     // If the PRNG implementation changes, this test will catch it.
     const rand = seeded('test')
     const id = Math.floor(rand() * 24) + 1
