@@ -25,12 +25,13 @@ class Reading {
         const newSeed = Math.floor(Math.random() * 1e9).toString(36)
         return html`
             <h2 class="card-name type-${card.type}">${card.name}</h2>
-            <p class="card-type"><span class="type-name type-${card.type}">${card.type}</span><span class="type-description">: ${typeDescriptions[card.type]}</span></p>
-            <p class="card-brief">${card.brief}</p>
+            <p class="card-brief-card">${card.brief}</p>
             ${card.tech ? html`
                 <h3>Tech</h3>
                 <p class="card-tech">${card.tech}</p>
             ` : ''}
+            <h3>Dimension</h3>
+            <p class="card-type"><span class="type-name type-${card.type}">${card.type}</span><span class="type-description">: ${typeDescriptions[card.type]}</span></p>
             <h3>Situation</h3>
             <p>${card.situation}</p>
             ${card.examples && card.examples.length ? html`
@@ -40,9 +41,6 @@ class Reading {
             ` : ''}
             <h3>Reflection</h3>
             <p class="card-reflection">${card.reflection}</p>
-            <p class="reading-actions">
-                <a href="/reading/${newSeed}">Draw another card</a>
-            </p>
         `
     }
 }
