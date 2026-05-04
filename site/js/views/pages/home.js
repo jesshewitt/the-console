@@ -3,12 +3,8 @@ import {html} from '../../html.js'
 
 const cardRow = card => html`
     <li>
-        <a href="/card/${card.id}" class="card-row">
-            <span class="card-num">${card.id}.</span>
-            <span class="card-name">${card.name}</span>
-            <span class="card-type">${card.type}</span>
-            <span class="card-brief">${card.brief}</span>
-        </a>
+        <a href="/card/${card.id}" class="card-name type-${card.type}">${card.name}</a>
+        <span class="card-brief">${card.brief}</span>
     </li>
 `
 
@@ -16,12 +12,9 @@ class Home {
     static title() { return 'The Console' }
 
     static render() {
-        const seed = Math.floor(Math.random() * 1e9).toString(36)
         return html`
             <p>
-                A divination deck.
-                <a href="/reading/${seed}">Draw a card</a>
-                or look through the deck.
+                A divination deck of 24 cards. Each card names a life situation through a tech metaphor. The cards group into four dimensions of any system: <span class="type-connection">connection</span>, <span class="type-state">state</span>, <span class="type-time">time</span>, and <span class="type-change">change</span>.
             </p>
 
             <ul class="card-list">

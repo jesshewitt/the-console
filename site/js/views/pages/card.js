@@ -1,6 +1,13 @@
 import cards from '/data/cards.json' with { type: 'json' }
 import {html} from '../../html.js'
 
+const typeDescriptions = {
+    connection: 'how things relate',
+    state: 'how things are',
+    time: 'how time unfolds',
+    change: 'how things shift',
+}
+
 class Card {
     static getCard(id) {
         const numericId = parseInt(id, 10)
@@ -19,12 +26,12 @@ class Card {
             return html`<h2>Not found</h2><p>That card doesn't exist. Try the <a href="/">home page</a>.</p>`
         }
         return html`
-            <h2 class="card-name">${card.name}</h2>
-            <p class="card-type">${card.type}</p>
+            <h2 class="card-name type-${card.type}">${card.name}</h2>
+            <p class="card-type"><span class="type-name type-${card.type}">${card.type}</span><span class="type-description">: ${typeDescriptions[card.type]}</span></p>
             <p class="card-brief">${card.brief}</p>
             ${card.tech ? html`
                 <h3>Tech</h3>
-                <p>${card.tech}</p>
+                <p class="card-tech">${card.tech}</p>
             ` : ''}
             <h3>Situation</h3>
             <p>${card.situation}</p>
@@ -34,7 +41,7 @@ class Card {
                 </ul>
             ` : ''}
             <h3>Reflection</h3>
-            <p>${card.reflection}</p>
+            <p class="card-reflection">${card.reflection}</p>
         `
     }
 }

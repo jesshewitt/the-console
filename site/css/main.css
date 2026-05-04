@@ -33,8 +33,19 @@
     --bg: #16171a;
     --text: #e8e8eb;
     --text-muted: #9a9aa3;
-    --accent: #5a9990;
+    --accent: #f97316;
+    --accent-hover: #fb923c;
     --line: #e8e8eb;
+
+    /* Type colors — dark mode */
+    --connection: #06b6d4;
+    --connection-hover: #22d3ee;
+    --state: #84cc16;
+    --state-hover: #a3e635;
+    --time: #8b5cf6;
+    --time-hover: #a78bfa;
+    --change: #ec4899;
+    --change-hover: #f472b6;
 }
 
 @media (prefers-color-scheme: light) {
@@ -42,8 +53,18 @@
         --bg: #fafafa;
         --text: #2a2a2e;
         --text-muted: #6b6b73;
-        --accent: #4a7670;
+        --accent: #ea580c;
+        --accent-hover: #f97316;
         --line: #2a2a2e;
+
+        --connection: #0891b2;
+        --connection-hover: #06b6d4;
+        --state: #65a30d;
+        --state-hover: #84cc16;
+        --time: #7c3aed;
+        --time-hover: #8b5cf6;
+        --change: #db2777;
+        --change-hover: #ec4899;
     }
 }
 
@@ -53,8 +74,18 @@
     --bg: #16171a;
     --text: #e8e8eb;
     --text-muted: #9a9aa3;
-    --accent: #5a9990;
+    --accent: #f97316;
+    --accent-hover: #fb923c;
     --line: #e8e8eb;
+
+    --connection: #06b6d4;
+    --connection-hover: #22d3ee;
+    --state: #84cc16;
+    --state-hover: #a3e635;
+    --time: #8b5cf6;
+    --time-hover: #a78bfa;
+    --change: #ec4899;
+    --change-hover: #f472b6;
 }
 
 :root.theme-light {
@@ -62,13 +93,33 @@
     --bg: #fafafa;
     --text: #2a2a2e;
     --text-muted: #6b6b73;
-    --accent: #4a7670;
+    --accent: #0f766e;
+    --accent-hover: #14b8a6;
     --line: #2a2a2e;
+
+    --connection: #0891b2;
+    --connection-hover: #06b6d4;
+    --state: #65a30d;
+    --state-hover: #84cc16;
+    --time: #7c3aed;
+    --time-hover: #8b5cf6;
+    --change: #db2777;
+    --change-hover: #ec4899;
 }
+
+.type-connection { color: var(--connection); }
+.type-state { color: var(--state); }
+.type-time { color: var(--time); }
+.type-change { color: var(--change); }
 
 a {
     color: var(--accent);
     text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--accent-hover);
 }
 
 body {
@@ -140,12 +191,13 @@ nav > ul > li:last-child {
 
 .theme-toggle:hover,
 .theme-toggle:focus-visible {
-    color: var(--accent);
+    color: var(--accent-hover);
 }
 
 nav a[aria-current="page"] {
     text-decoration: none;
     color: var(--accent);
+    border-bottom: 2px solid var(--accent);
 }
 
 .pre {
@@ -163,11 +215,11 @@ ul {
     }
 }
 
-/* Card list: id, name, type, brief */
+/* Card list: name (link), brief */
 .card-list {
     display: grid;
-    grid-template-columns: auto auto auto 1fr;
-    gap: 0 0.75em;
+    grid-template-columns: auto 1fr;
+    gap: 0 2em;
     list-style: none;
     padding: 0;
 }
@@ -176,48 +228,44 @@ ul {
     display: grid;
     grid-template-columns: subgrid;
     grid-column: 1 / -1;
-}
-
-.card-row {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 1 / -1;
-    gap: inherit;
-    text-decoration: none;
-    color: inherit;
     align-items: baseline;
     padding: 0.2em 0;
 }
 
-.card-row:hover,
-.card-row:focus-visible {
-    color: var(--accent);
-}
-
-.card-num {
-    text-align: right;
-    font-variant-numeric: tabular-nums;
-    color: var(--text-muted);
-}
-
 .card-name {
     font-weight: bold;
+    text-decoration: none;
 }
 
-.card-situation {
-    color: var(--text-muted);
-    font-size: 0.9em;
-}
+a.card-name.type-connection:hover,
+a.card-name.type-connection:focus-visible { color: var(--connection-hover); }
+
+a.card-name.type-state:hover,
+a.card-name.type-state:focus-visible { color: var(--state-hover); }
+
+a.card-name.type-time:hover,
+a.card-name.type-time:focus-visible { color: var(--time-hover); }
+
+a.card-name.type-change:hover,
+a.card-name.type-change:focus-visible { color: var(--change-hover); }
 
 .card-type {
-    color: var(--text-muted);
     font-size: 0.85em;
-    text-transform: capitalize;
     margin: 0 0 0.5em 0;
 }
 
-/* Examples list on card and reading pages */
-.card-examples {
+.type-name {
+    text-transform: capitalize;
+}
+
+.type-description {
+    color: var(--text-muted);
+}
+
+/* Muted secondary content on card and reading pages */
+.card-examples,
+.card-tech,
+.card-reflection {
     color: var(--text-muted);
     font-size: 0.95em;
 }

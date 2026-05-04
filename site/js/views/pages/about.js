@@ -6,26 +6,24 @@ class About {
     static render() {
         return html`
             <h2>What this is</h2>
-            <p>A divination deck. Each card names a recognizable life situation through a tech metaphor and offers
-            something to notice and a move to consider. The reading offers a fresh description of where you are. Not a
-            prediction, not instruction, just a frame to sit with.</p>
+            <p>A divination deck of 24 cards. Each card names a recognizable life situation through a tech metaphor.
+            The reading offers a structural frame for the moment you're in, a way to see what kind of pattern you're
+            in.</p>
+            <p>The cards group into four dimensions of any system:
+            <span class="type-connection">connection</span> (how things relate),
+            <span class="type-state">state</span> (how things are),
+            <span class="type-time">time</span> (how time unfolds), and
+            <span class="type-change">change</span> (how things shift).</p>
+            <p>The deck draws on systems theory, the observation that the same structural patterns recur across very
+            different domains. A stale cache could be compared to someone making a decision based on outdated information. 
+            A deadlock between two computer processes is similar to two friends each waiting for the other to apologize. 
+            Each card names one of these patterns.</p>
 
             <h2>How a reading works</h2>
-            <p>You draw a card by entering a seed string. Any string works: a word, a phrase, a timestamp. The seed
-            deterministically selects one card from the deck. The same seed always produces the same card, so readings
-            are reproducible and shareable. The URL is the reading.</p>
-            <p>The in-app reading link generates a random seed for you. You can also edit the URL seed directly.</p>
+            <p>A reading selects one of the 24 cards at random. Each reading is reproducible and shareable through
+            its URL.</p>
 
-            <h2>How to use it well</h2>
-            <p>The reading lands as useful when you bring attention to it. Read the card, sit with the name, and notice
-            how it might apply to where you are right now. The system gives you a frame your habitual thinking might
-            not have generated. The work happens in the moment of seeing.</p>
-            <p>Whether the draw landed on the right card through some mechanism or whether you're finding resonance
-            with whichever card you got is beside the point. Both stances work. The reframing happens regardless.</p>
-
-            <h2>Notes on origins</h2>
-            <p>The card names are drawn from the signal, networking, and systems register. The entries were written
-            specifically for this project.</p>
+            <h2>License</h2>
             <p>The code is MIT-licensed. The content (the card entries) is dedicated to the public domain under
             <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a>.</p>
         `
