@@ -97,7 +97,7 @@ export const cards = [
             'A block on social media',
             'A rejection from a romantic interest',
         ],
-        reflection: 'Connection Refused is the case where the destination is reachable and responsive but actively rejects the request. The rejection itself is a signal. The system is functioning and the answer has been delivered. Unlike silence or unreachability, the situation contains no ambiguity. A clear refusal closes a possibility with certainty, which is often more useful than a maybe.',
+        reflection: "Connection Refused is the case where the destination is reachable and responsive but actively rejects the request. The rejection itself is a signal. The system is functioning and the answer has been delivered. Unlike silence or unreachability, the situation contains no ambiguity. A clear refusal closes a possibility with certainty. Even when it isn't what you wanted to hear, at least you're not left wondering.",
     },
     {
         id: 7,
@@ -108,7 +108,7 @@ export const cards = [
         situation: 'Free time with no demands.',
         examples: [
             'A vacation',
-            'A free evening with no obligations',
+            'An evening with no obligations',
             'A pause between projects',
             'An open Saturday afternoon',
             'Rest after hard work',
@@ -125,11 +125,11 @@ export const cards = [
         examples: [
             'Hiding aspects of yourself while at work',
             'Working at a slower speed to avoid overwhelming someone',
-            "Keeping back creative ideas that don't fit the project",
+            "Not voicing your creative ideas",
             'Speaking carefully to avoid conflict',
             'Editing yourself to avoid offending others',
         ],
-        reflection: 'Throttling is when a system intentionally limits the rate of its output. The full capacity remains present. The constraint is structural, set somewhere in the configuration. A throttle exists for a reason: protecting downstream systems, conserving resources, meeting external rules. The constraint can outlast the conditions that produced it. A throttle that goes unexamined becomes invisible. Over time, the limit can stop being recognized as configurable. It may begin to feel like the actual edge of what is possible.',
+        reflection: 'Throttling is when a system intentionally limits the rate of its output. The full capacity remains present. The constraint is structural, set somewhere in the configuration. A throttle exists for a reason: protecting downstream systems, conserving resources, meeting external rules. The constraint can outlast the conditions that produced it. A throttle that goes unexamined becomes invisible. Over time, the limit can stop being recognized as something you can change. It may begin to feel like the actual bounds of what is possible.',
     },
     {
         id: 9,
@@ -140,11 +140,9 @@ export const cards = [
         situation: 'Everything pressing on you at once.',
         examples: [
             'Drowning in unread messages',
-            'Falling behind on a growing to-do list',
+            'Falling behind on a growing todo list',
             'Juggling too many commitments at once',
             'Treating everything coming in as urgent',
-            'Working on too many projects at the same time',
-            'Being pulled in too many directions',
             'Running from one thing to the next without a break',
         ],
         reflection: 'The system is at capacity. Inputs are arriving faster than they can be processed, and every system at this point either drops new input, queues it indefinitely, or applies backpressure to the source. There is no fourth option. The choice is being made now, with or without your awareness or consent. That, more than the overload itself, is usually what makes the experience hard.',
@@ -164,7 +162,7 @@ export const cards = [
             'Going by social rules that have since evolved',
             'Holding on to opinions you formed long ago',
         ],
-        reflection: 'A cache holds a copy of data taken at some point in the past. The system reads from the cache rather than the source, which is cheaper and faster. The cache becomes stale when the source changes but the copy stays the same. From inside the system, there is no automatic signal that the cache has gone stale. The system continues operating on the snapshot, producing results that are internally consistent and externally wrong. The structural problem is the gap between when the source changed and when the system caught up. During that gap, the system runs on confidence that no longer applies.',
+        reflection: 'A cache holds a copy of data taken at some point in the past. The system reads from the cache rather than the source, which is cheaper and faster. The cache becomes stale when the source changes but the copy stays the same. From inside the system, there is no automatic signal that the cache has gone stale. The system continues operating on the snapshot, producing results that are internally consistent and externally wrong. The cache cannot detect its own staleness. Only external validation reveals what is still true.',
     },
     {
         id: 11,
@@ -178,7 +176,7 @@ export const cards = [
             'A frequent regret',
             'An unprocessed loss',
             'A relived trauma',
-            'A nagging health concern',
+            'A nagging health issue',
         ],
         reflection: 'A memory leak is when a system holds onto information past when it needs it. Each instance is small. Their accumulation, over time, becomes the structural issue. Slow leaks are difficult to detect in the moment because the system continues running and capacity decreases gradually. What gets noticed is usually the effect: the system feels heavier, slower, or less responsive, without anything specific being clearly wrong.',
     },
