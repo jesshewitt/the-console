@@ -1,6 +1,6 @@
 # The Console
 
-A divination deck. Each card names a recognizable life situation through a tech metaphor and offers something to notice and a move to consider. Draw a card by entering a seed and the URL is the reading.
+A divination deck. Each card names a recognizable life situation through a tech metaphor, paired with a systems-theoretic reflection on the pattern. Each reading lives at its own URL, making it shareable and reproducible.
 
 ## Licensing
 
