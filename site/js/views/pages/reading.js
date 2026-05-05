@@ -3,10 +3,10 @@ import {html} from '../../html.js'
 import {seeded} from '../../rng.js'
 
 const typeDescriptions = {
-    connection: 'how things relate',
+    connection: 'how things are linked',
     state: 'how things are',
-    time: 'how time unfolds',
-    change: 'how things shift',
+    time: 'how time progresses',
+    change: 'how things transform',
 }
 
 function castFromSeed(seed) {

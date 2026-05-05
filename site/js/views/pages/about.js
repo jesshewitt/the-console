@@ -26,8 +26,8 @@ class About {
             waiting. The six time cards range from regular and active (Heartbeat, Sync) through active and passive
             waiting (Polling, Latency) to silence (Timeout) and mutual stuck (Deadlock).</p>
             <p><strong class="type-change">Change.</strong> Moments of structural transformation. The six change
-            cards span small temporary fixes (Patch), divergence and convergence (Fork, Merge), clearing (Garbage
-            Collection), recovery (Restore), and total reset (Reset).</p>
+            cards span small temporary fixes (Patch), decisions (Branch), bringing things together (Merge),
+            clearing (Garbage Collection), improvement (Upgrade), and total reset (Reset).</p>
 
             <h2>How a reading works</h2>
             <p>A reading selects one of the 24 cards at random. Each reading is reproducible and shareable through
