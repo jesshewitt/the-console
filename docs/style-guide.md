@@ -37,6 +37,13 @@ These have come up repeatedly. Apply absolutely.
   - "not X, but Y"
   - "real X, not Y"
   - "X, not Y" (e.g. "real rest, not waiting")
+- No falsely-deep aphoristic patterns:
+  - "X is what does Y" ("the work is lowering the noise", "deciding is what makes one of them real")
+  - "The moment of X is the moment of Y"
+  - "X comes from Y" as a closing insight
+  - Abstract noun phrases standing in for meaning: "what was apart", "the thing", "the system that comes through it", "the cost lives in the pattern itself"
+- No tautological closers: sentences that just restate that decisions have consequences, or that practice over time matters
+- No diagnostic claims about what the consulter feels: "the discomfort comes from...", "what usually makes it hard is..."
 - No banned jargon: *attractor, feedback, entropy, synchronicity, archetype, vibration*
 - No coaching imperatives: "you should", "you must", "you need to"
 - No mystical or cosmological appeals: "the universe", "cosmic", "destined", "the field is..."
@@ -47,8 +54,10 @@ These have come up repeatedly. Apply absolutely.
 - Plain over technical
 - Short over long
 - Direct over hedged
+- Active voice when describing human agency: "you decide" not "the decision is made". Decisions don't happen passively, people make them
 - Examples grounded in everyday life, multi-domain
 - Watch for word repetition across examples within one card (e.g. don't have "begun" in two scenarios in a list)
+- Watch for word over-rotation across the whole card: if the metaphor's central word ("path", "no longer", "choice") appears 4+ times across brief/situation/examples/reflection, vary it
 - No filler phrases: "worth noting", "it is worth", "essentially", "simply put"
 - Metaphor stays in the card name and tech section. Brief, situation, examples, and reflection use plain human language for the actual experience, in words a person would use about their own life
 
@@ -72,8 +81,9 @@ These have come up repeatedly. Apply absolutely.
 
 ### `examples`
 
-- 5-8 distinct scenarios
+- 5 examples is the standard count (range 5-8 for flexibility)
 - Each a different *kind* of moment, not surface variants of the same one
+- Vary the *shape of action*, not just the domain: three rejoining/reconciling examples across relationship/community/family share the same shape and should consolidate to one
 - Multi-domain: cover relationships, work, internal life, decisions, beliefs, etc.
 - Short phrases or short clauses, not full paragraphs
 - Concrete enough to recognize immediately
@@ -104,6 +114,18 @@ A short paragraph (3-6 sentences) of food for thought drawn from systems theory.
 - No prescriptions, no instructions
 - The closing insight is the food-for-thought, not a directive. Don't tell the consulter what to contemplate; let the structural truth point at what's there
 - Frame toward structural understanding, not toward managing or fixing
+
+**Tests to run on every reflection (especially the closer):**
+
+- **Point test**: ask "what's the point of this sentence?" — if you can't state it in one plain sentence, the reflection is gesturing rather than saying. Empty phrasings like "the cost lives in the pattern itself" fail this test
+- **Applicability test**: does the closer fit *all* examples? If it only fits some (e.g., "others come to count on you" fits relational examples but not self-care), rework. The closer must apply across the example set
+- **Concrete language test**: read aloud and find abstract noun phrases doing the meaning-work ("the X that Y", "what was Z", "the system that comes through it"). Replace with plain English you'd actually say to a friend
+- **Tautology test**: would the closer be true even if you replaced the card's specific subject with anything else? (E.g., "what follows depends on which option was taken" is true of any decision — empty.) The closer must say something *specific* to this card
+
+**Useful patterns:**
+
+- "In computing X. In life Y." — works well for cards where the tech and life patterns diverge meaningfully (Crash, Garbage Collection, Upgrade). Names the structural difference cleanly
+- The tech metaphor often doesn't map literally to human experience. When it doesn't, acknowledge the divergence rather than forcing the literal mapping (Fork's "two processes both keep running" doesn't fit human choice — Branch's looser metaphor works better)
 
 ## Process
 
