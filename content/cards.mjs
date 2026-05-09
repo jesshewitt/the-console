@@ -168,9 +168,9 @@ export const cards = [
         id: 11,
         name: 'Memory Leak',
         type: 'state',
-        brief: 'Something keeps quietly draining your attention.',
+        brief: 'Something is draining your attention.',
         tech: 'A memory leak is when a program holds onto memory past when it needs it.',
-        situation: 'Something keeps pulling at you, again and again.',
+        situation: 'Something keeps bothering you.',
         examples: [
             'A recurring worry',
             'A frequent regret',
@@ -178,7 +178,7 @@ export const cards = [
             'A relived trauma',
             'A nagging health issue',
         ],
-        reflection: 'A memory leak is when a system holds onto information past when it needs it. Each instance is small. Their accumulation, over time, becomes the structural issue. Slow leaks are difficult to detect in the moment because the system continues running and capacity decreases gradually. What gets noticed is usually the effect: the system feels heavier, slower, or less responsive, without anything specific being clearly wrong.',
+        reflection: 'A memory leak is when a system holds onto information past when it needs it. Each instance is small. Their accumulation, over time, becomes the structural issue. Slow leaks are difficult to detect in the moment because the system continues running and capacity decreases gradually. But the effect is noticeable: the system feels heavier, slower, or less responsive, without anything specific being clearly wrong.',
     },
     {
         id: 12,
