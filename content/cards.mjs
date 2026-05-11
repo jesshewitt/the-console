@@ -242,13 +242,13 @@ export const cards = [
             'Checking the mail for an expected package',
             'Watching the door for someone to arrive',
         ],
-        reflection: 'Polling is the repeated checking for updates at regular intervals. Most checks return no new information when the thing being watched has not yet changed. Human situations often work the same way during periods of uncertainty or anticipation. Repeated checking may not speed anything up, but it can make waiting feel less passive.',
+        reflection: 'Polling is the repeated checking for updates at regular intervals, returning the same result unless something has changed. Human situations often work the same way during times of uncertainty or anticipation. Repeated checking may not change the outcome, but it can make waiting feel less passive.',
     },
     {
         id: 16,
         name: 'Latency',
         type: 'time',
-        brief: "There's a long wait between your input and the response.",
+        brief: "A long wait between action and result.",
         tech: 'Latency is the delay between when something is sent and when it arrives.',
         situation: 'Time passing between cause and effect.',
         examples: [
@@ -258,13 +258,13 @@ export const cards = [
             "A new habit that hasn't changed your life yet",
             'A medical treatment that takes weeks to start working',
         ],
-        reflection: 'Latency is the delay between when a signal is sent and when it arrives. During this time, the signal is in transit. No information about the result is available until the transmission has finished. The temptation during latency is to interpret the message before it is received. A signal in transit is not yet a result. Whatever finally arrives might be very different from what you imagined.',
+        reflection: 'Latency is the delay between an action and its observable result. Human life can feel similar at times when consequences or changes remain unknown. Uncertainty often encourages people to imagine possible outcomes, but an unresolved situation is not yet a final result.',
     },
     {
         id: 17,
         name: 'Timeout',
         type: 'time',
-        brief: 'You waited for a response that never arrived.',
+        brief: 'Waiting for a response that never arrives.',
         tech: 'A timeout is when a system gives up waiting for a response. After a configured time, the request is treated as failed.',
         situation: 'Silence where an answer was expected.',
         examples: [
@@ -274,7 +274,7 @@ export const cards = [
             'A promise that never gets fulfilled',
             'An apology that never comes',
         ],
-        reflection: 'A timeout is the moment a system stops waiting for a response that never came. The request was sent, a window of time passed, and no answer arrived. The other side might never have received the message, or might have received it and chosen not to reply. From this side, both look the same. A timeout is structurally ambiguous: it only tells you that nothing came back. Choosing to time out is a choice to stop waiting. Why no response came may never be known.',
+        reflection: 'A timeout occurs when a system stops waiting after no response arrives within a certain amount of time. The lack of a reply does not always indicate whether the message was ignored, missed, or never received. Human life can feel similar when silence leaves situations unresolved without an explanation. Sometimes the only decision available is whether to continue waiting.',
     },
     {
         id: 18,
@@ -287,10 +287,10 @@ export const cards = [
             'After an argument, friends waiting for each other to apologize',
             'Two cars at an intersection, each waiting for the other to move first',
             'A negotiation frozen with both sides waiting for the other to budge',
-            'Two people interested in each other, both waiting for the other to make a move',
+            'Two people interested in each other, both waiting for the other to reach out',
             'A meeting where no one wants to be the first to speak',
         ],
-        reflection: 'A deadlock is when two or more sides each wait for the other to make the first move. As long as both wait, both stay stuck. The freeze ends when someone acts.',
+        reflection: 'A deadlock occurs when multiple systems are each waiting for the others before they can continue. As long as every side continues waiting, nothing changes. Human situations can work the same way when pride or caution prevent anyone from acting first. Deadlocks often persist until someone becomes willing to act without knowing how the other side will respond.',
     },
     {
         id: 19,
