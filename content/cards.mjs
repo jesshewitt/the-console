@@ -17,7 +17,7 @@ export const cards = [
             'Joining a team or partnership',
             'Initiating a creative collaboration',
         ],
-        reflection: 'A handshake establishes a working connection. Two systems exchange information, confirm that they can work together, and then begin communicating. In computing, the uncertainty ends there. In life, starting something new can still feel uncertain even when the decision to do so feels right. But with time, things often feel more natural.',
+        reflection: 'A handshake establishes a working connection. Two systems exchange information, confirm that they can work together, and then begin communicating. In computing, the uncertainty ends there. In life, starting something new can still feel uncertain even when the decision to do so feels right. With time, things will often begin to feel more natural.',
     },
     {
         id: 2,
