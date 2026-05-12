@@ -11,7 +11,7 @@ const typeDescriptions = {
 
 function castFromSeed(seed) {
     const rand = seeded(seed)
-    return Math.floor(rand() * 24) + 1
+    return Math.floor(rand() * 28) + 1
 }
 
 class Reading {

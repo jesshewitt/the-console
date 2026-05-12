@@ -101,6 +101,22 @@ export const cards = [
     },
     {
         id: 7,
+        name: 'Firewall',
+        type: 'connection',
+        brief: 'Not everything is allowed through.',
+        tech: 'A firewall filters incoming and outgoing network traffic according to a set of rules. It allows some connections through while blocking others.',
+        situation: 'Carefully managing access or exposure.',
+        examples: [
+            'Being cautious about sharing personal information',
+            'Limiting contact with someone who has been harmful',
+            'Separating work life from private life',
+            'Ignoring inflammatory comments online',
+            'Choosing carefully who gets close to you',
+        ],
+        reflection: 'A firewall filters traffic between systems according to a set of rules. Some requests are allowed through, while others are blocked or restricted. Human situations can work the same way when people limit access to their time, attention, emotions, or personal lives. The goal is often protection, though every filter also determines what can pass through.',
+    },
+    {
+        id: 8,
         name: 'Idle',
         type: 'state',
         brief: 'A period of unoccupied time.',
@@ -116,7 +132,7 @@ export const cards = [
         reflection: 'Idle is when a system has available capacity but no immediate task to perform. The system is functional but at rest. Human life can feel similar during periods of inactivity. In cultures that equate usefulness with constant productivity, stillness can be mistaken for lack of purpose or value.',
     },
     {
-        id: 8,
+        id: 9,
         name: 'Throttled',
         type: 'state',
         brief: "Output is being intentionally limited.",
@@ -132,7 +148,7 @@ export const cards = [
         reflection: 'Throttling is when a system intentionally limits its own output. The system\'s full capacity is still present, but its output is being carefully regulated for practical reasons: preventing overload, conserving resources, or adapting to external limits. Human behavior often works the same way. People learn to hold back parts of themselves in certain environments or roles. Sometimes those self-imposed limitations remain in place long after they stop being necessary.',
     },
     {
-        id: 9,
+        id: 10,
         name: 'Buffer Full',
         type: 'state',
         brief: "The system is overloaded.",
@@ -148,7 +164,7 @@ export const cards = [
         reflection: 'A buffer temporarily holds incoming information until it can be processed. When too much information arrives too quickly, the buffer fills and the system begins struggling to keep up. Human life can feel similar during periods of sustained pressure or overload. Attention, energy, and emotional capacity all have limits.',
     },
     {
-        id: 10,
+        id: 11,
         name: 'Stale Cache',
         type: 'state',
         brief: "Working from outdated information.",
@@ -165,7 +181,7 @@ export const cards = [
         reflection: 'A cache stores previously retrieved information so it can be reused quickly. Problems appear when the stored version no longer matches the current reality. Human life can feel similar when old beliefs or expectations continue to affect how the present is perceived. Revising these outdated assumptions usually requires observing things as they currently are, as change is not always noticeable from the inside.',
     },
     {
-        id: 11,
+        id: 12,
         name: 'Memory Leak',
         type: 'state',
         brief: 'Something unresolved is draining energy.',
@@ -181,7 +197,7 @@ export const cards = [
         reflection: 'A memory leak happens when a system continues holding onto resources it no longer needs. The system keeps functioning, but over time this drain begins to affect performance. Human life can feel similar when unresolved worries, grief, or stress occupy more and more mental and emotional space. The result is often a growing sense of fatigue or heaviness that may be difficult to trace to any single cause.',
     },
     {
-        id: 12,
+        id: 13,
         name: 'Crash',
         type: 'state',
         brief: 'A sudden and disruptive ending.',
@@ -197,7 +213,23 @@ export const cards = [
         reflection: 'A crash is when a system stops suddenly before its current state can be fully preserved. Information that was never saved may be lost when the process ends abruptly. Human life can feel similar when something suddenly changes in a way that cannot be undone. Recovery is rarely as simple as restarting from where things left off. Life after a crash often means adapting to both what remains and what was lost.',
     },
     {
-        id: 13,
+        id: 14,
+        name: 'Queue',
+        type: 'state',
+        brief: 'Things are waiting their turn.',
+        tech: 'A queue is an ordered line of tasks or requests waiting to be processed one at a time.',
+        situation: 'A backlog waiting for attention.',
+        examples: [
+            'Unread messages piling up',
+            'Putting off difficult conversations',
+            'A todo list of household tasks',
+            'Unresolved decisions waiting for attention',
+            'Creative ideas that never lead to action',
+        ],
+        reflection: 'A queue is a list of work waiting to be processed in order. Human life can feel similar when too many responsibilities or demands compete for limited time and attention. Some things remain unfinished not because they do not matter, but because there is only so much that can be handled at once.',
+    },
+    {
+        id: 15,
         name: 'Heartbeat',
         type: 'time',
         brief: 'A steady rhythm that keeps something alive.',
@@ -213,7 +245,7 @@ export const cards = [
         reflection: 'A heartbeat is a repeated signal that indicates a system is still functioning. The signal may seem small on its own, but over time its regularity becomes meaningful. Human life often works the same way. Relationships and routines are usually maintained through small, consistent actions.',
     },
     {
-        id: 14,
+        id: 16,
         name: 'Sync',
         type: 'time',
         brief: 'Alignment that enables cooperation.',
@@ -229,7 +261,7 @@ export const cards = [
         reflection: 'Synchronization is the alignment of separate systems so they can work together effectively. Human situations sometimes work the same way. Good collaboration often depends on people and circumstances aligning in ways that cannot always be anticipated.',
     },
     {
-        id: 15,
+        id: 17,
         name: 'Polling',
         type: 'time',
         brief: "Repeatedly looking for an update.",
@@ -245,7 +277,7 @@ export const cards = [
         reflection: 'Polling is the repeated checking for updates at regular intervals, returning the same result unless something has changed. Human situations often work the same way during times of uncertainty or anticipation. Repeated checking may not change the outcome, but it can make waiting feel less passive.',
     },
     {
-        id: 16,
+        id: 18,
         name: 'Latency',
         type: 'time',
         brief: "A long wait between action and result.",
@@ -261,7 +293,7 @@ export const cards = [
         reflection: 'Latency is the delay between an action and its observable result. Human life can feel similar at times when consequences or changes remain unknown. Uncertainty often encourages people to imagine possible outcomes, but an unresolved situation is not yet a final result.',
     },
     {
-        id: 17,
+        id: 19,
         name: 'Timeout',
         type: 'time',
         brief: 'Waiting for a response that never arrives.',
@@ -277,7 +309,7 @@ export const cards = [
         reflection: 'A timeout occurs when a system stops waiting after no response arrives within a certain amount of time. The lack of a reply does not always indicate whether the message was ignored, missed, or never received. Human life can feel similar when silence leaves situations unresolved without an explanation. Sometimes the only decision available is whether to continue waiting.',
     },
     {
-        id: 18,
+        id: 20,
         name: 'Deadlock',
         type: 'time',
         brief: 'Both sides are stuck, each waiting for the other to make the first move.',
@@ -293,7 +325,23 @@ export const cards = [
         reflection: 'A deadlock occurs when multiple systems are each waiting for the others before they can continue. As long as every side continues waiting, nothing changes. Human situations can work the same way when pride or caution prevent anyone from acting first. Deadlocks often persist until someone becomes willing to act without knowing how the other side will respond.',
     },
     {
-        id: 19,
+        id: 21,
+        name: 'Retry',
+        type: 'time',
+        brief: 'Trying again after failure or interruption.',
+        tech: 'A retry is when a system attempts an operation again after it fails or receives no response.',
+        situation: 'Trying again under uncertain conditions.',
+        examples: [
+            'Reapplying after being rejected',
+            'Trying to reconnect after losing touch',
+            'Returning to a skill after struggling with it',
+            'Attempting a difficult conversation again',
+            'Starting over on a project that previously failed',
+        ],
+        reflection: 'A retry is another attempt made after an operation does not succeed. Some failures only happen because conditions were wrong at the time. Human life can feel similar when people choose to try again after disappointment, rejection, or interruption. The outcome may still remain uncertain, but uncertainty is not the same thing as impossibility.',
+    },
+    {
+        id: 22,
         name: 'Patch',
         type: 'change',
         brief: 'A quick fix to keep things going for now.',
@@ -309,7 +357,7 @@ export const cards = [
         reflection: 'A patch is a small change that addresses an immediate problem without fully rebuilding the underlying system. The issue may not be completely resolved, but the system can continue functioning. Human life often works the same way. Temporary solutions may not fix everything, but they can provide time and stability to work on the larger problems.',
     },
     {
-        id: 20,
+        id: 23,
         name: 'Branch',
         type: 'change',
         brief: 'A choice between different paths.',
@@ -325,7 +373,7 @@ export const cards = [
         reflection: 'A branch occurs when one path splits into multiple possible directions. Human situations can feel similar at moments where important choices create different potential futures. No option comes with complete certainty, and it often takes time to fully understand the consequences of a decision.',
     },
     {
-        id: 21,
+        id: 24,
         name: 'Merge',
         type: 'change',
         brief: 'Two separate things are coming together.',
@@ -341,7 +389,7 @@ export const cards = [
         reflection: 'A merge occurs when separate systems are combined into one. Human life can feel similar when relationships, identities, or responsibilities begin connecting more closely. The result often contains elements of both sides, but is also something entirely new.',
     },
     {
-        id: 22,
+        id: 25,
         name: 'Garbage Collection',
         type: 'change',
         brief: 'Releasing what has served its purpose.',
@@ -357,7 +405,7 @@ export const cards = [
         reflection: 'Garbage collection frees memory that is no longer being actively used by the system. Without occasional clearing, resources remain tied up unnecessarily over time. Human life can feel similar when old items, habits, or emotional attachments continue occupying space after they no longer serve a purpose. Unlike computers, people usually have to consciously choose what they are ready to release.',
     },
     {
-        id: 23,
+        id: 26,
         name: 'Upgrade',
         type: 'change',
         brief: "Replacing old limitations with new capabilities.",
@@ -373,7 +421,7 @@ export const cards = [
         reflection: 'An upgrade changes a system so it can operate more effectively or perform new tasks. Human life can feel similar when better tools or more experience change what a person is able to accomplish. Sometimes this progress is easiest to recognize in situations that no longer feel as difficult as they once did.',
     },
     {
-        id: 24,
+        id: 27,
         name: 'Reset',
         type: 'change',
         brief: 'Starting over after major change.',
@@ -387,5 +435,21 @@ export const cards = [
             'Moving to a new home',
         ],
         reflection: 'A reset returns a system to a stable starting condition after normal operation has been interrupted. Human life can feel similar after major changes that require rebuilding in a new direction. Unlike computing systems, people do not return to exactly who they were before the reset.',
+    },
+    {
+        id: 28,
+        name: 'Backup',
+        type: 'change',
+        brief: 'Protecting against irreversible loss.',
+        tech: 'A backup is a preserved copy of data that can be restored if the original is lost, damaged, or corrupted.',
+        situation: 'Preserving something important before change or risk.',
+        examples: [
+            'Saving messages or photos from an important relationship',
+            'Keeping emergency savings',
+            'Recording family stories or recipes',
+            'Holding onto skills from a previous career',
+            'Creating copies of important documents',
+        ],
+        reflection: 'A backup preserves something important so it can survive unexpected loss or disruption. Human situations can feel similar when people hold onto memories, relationships, or resources that they may need later. Preparing for loss can be a way of protecting what matters most.',
     },
 ]

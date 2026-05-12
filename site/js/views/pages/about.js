@@ -6,7 +6,7 @@ class About {
     static render() {
         return html`
             <h2>What this is</h2>
-            <p>A divination deck of 24 cards. Each card names a recognizable life situation through a tech metaphor.
+            <p>A divination deck of 28 cards. Each card names a recognizable life situation through a tech metaphor.
             The reading offers a structural frame for the moment you're in, a way to see what kind of pattern you're
             in.</p>
             <p>The deck draws on systems theory, the observation that the same structural patterns recur across very
@@ -16,21 +16,23 @@ class About {
 
             <h2>The four dimensions</h2>
             <p>Each card belongs to one of four dimensions of any system.</p>
+
             <p><strong class="type-connection">Connection.</strong> Channels and relationships through which things
-            interact. The six connection cards trace channel behavior from open and active (Handshake, Bridge,
-            Loopback) through degraded (Echo, Static) to closed (Connection Refused).</p>
-            <p><strong class="type-state">State.</strong> The current status of the system: capacity,
-            configuration, what's been accumulating. The six state cards cover open availability (Idle, Throttled),
-            capacity stress (Buffer Full), drift (Stale Cache, Memory Leak), and outright break (Crash).</p>
-            <p><strong class="type-time">Time.</strong> Temporal patterns of a situation: rhythm, delay, alignment,
-            waiting. The six time cards range from regular and active (Heartbeat, Sync) through active and passive
-            waiting (Polling, Latency) to silence (Timeout) and mutual stuck (Deadlock).</p>
-            <p><strong class="type-change">Change.</strong> Moments of structural transformation. The six change
+            interact. The seven connection cards trace channel behavior from open and active (Handshake, Bridge,
+            Loopback) through degraded (Echo, Static) to closed (Connection Refused, Firewall).</p>
+
+            <p><strong class="type-state">State.</strong> The current status of the system. The seven state cards cover open availability (Idle, Throttled),
+            capacity stress (Buffer Full, Queue), drift (Stale Cache, Memory Leak), and outright failure (Crash).</p>
+
+            <p><strong class="type-time">Time.</strong> Temporal patterns of a situation. The seven time cards range from regular and active (Heartbeat, Sync) through active and passive
+            waiting (Polling, Latency) to error states (Timeout, Deadlock) and recovery (Retry).</p>
+            
+            <p><strong class="type-change">Change.</strong> Moments of structural transformation. The seven change
             cards span small temporary fixes (Patch), decisions (Branch), bringing things together (Merge),
-            clearing (Garbage Collection), improvement (Upgrade), and total reset (Reset).</p>
+            clearing (Garbage Collection), improvement (Upgrade), total reset (Reset), and protection (Backup).</p>
 
             <h2>How a reading works</h2>
-            <p>A reading selects one of the 24 cards at random. Each reading is reproducible and shareable through
+            <p>A reading selects one of the 28 cards at random. Each reading is reproducible and shareable through
             its URL.</p>
 
             <h2>License</h2>
