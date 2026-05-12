@@ -1,7 +1,7 @@
 {
     "name": "The Console",
     "short_name": "Console",
-    "description": "A divination deck of 24 cards.",
+    "description": "A divination deck of 28 cards.",
     "theme_color": "#16171a",
     "background_color": "#16171a",
     "display": "standalone",
