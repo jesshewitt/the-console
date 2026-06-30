@@ -3,6 +3,7 @@ import assert from 'node:assert/strict'
 import {seeded} from '../site/js/rng.js'
 import cards from '../site/data/cards.json' with { type: 'json' }
 import categories from '../site/data/categories.json' with { type: 'json' }
+import {cardDetail} from '../site/js/views/components/card-detail.js'
 
 // PRNG tests
 
@@ -88,4 +89,27 @@ test('categories metadata matches card categories', () => {
         assert.ok(typeof meta.label === 'string' && meta.label.length > 0, `category ${key} label is empty`)
         assert.ok(typeof meta.question === 'string' && meta.question.length > 0, `category ${key} question is empty`)
     }
+})
+
+test('cardDetail renders the two-voice card markup', () => {
+    const card = {
+        id: 1, name: 'Radar', category: 'perception',
+        tech: 'Radar systems detect and track objects.',
+        dimension: 'Awareness',
+        dimensionNote: 'Awareness is the information available to you.',
+        manifestations: ['Blind spots', 'Ignored signals'],
+    }
+    const categories = {perception: {label: 'Perception', question: 'How do I see this?'}}
+    const out = String(cardDetail(card, categories))
+
+    assert.match(out, /Radar/)
+    assert.match(out, /category-perception/)
+    assert.match(out, /Perception/)
+    assert.match(out, /How do I see this\?/)
+    assert.match(out, /System Documentation/)
+    assert.match(out, /Radar systems detect and track objects\./)
+    assert.match(out, /Operator's Guide/)
+    assert.match(out, /Awareness is the information available to you\./)
+    assert.match(out, /Blind spots/)
+    assert.match(out, /Ignored signals/)
 })
