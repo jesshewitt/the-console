@@ -37,15 +37,15 @@
     --accent-hover: #fb923c;
     --line: #e8e8eb;
 
-    /* Type colors — dark mode */
+    /* Category colors — dark mode */
+    --perception: #84cc16;
+    --perception-hover: #a3e635;
+    --agency: #8b5cf6;
+    --agency-hover: #a78bfa;
     --connection: #06b6d4;
     --connection-hover: #22d3ee;
-    --state: #84cc16;
-    --state-hover: #a3e635;
-    --time: #8b5cf6;
-    --time-hover: #a78bfa;
-    --change: #ec4899;
-    --change-hover: #f472b6;
+    --structure: #ec4899;
+    --structure-hover: #f472b6;
 }
 
 @media (prefers-color-scheme: light) {
@@ -57,14 +57,14 @@
         --accent-hover: #f97316;
         --line: #2a2a2e;
 
+        --perception: #65a30d;
+        --perception-hover: #84cc16;
+        --agency: #7c3aed;
+        --agency-hover: #8b5cf6;
         --connection: #0891b2;
         --connection-hover: #06b6d4;
-        --state: #65a30d;
-        --state-hover: #84cc16;
-        --time: #7c3aed;
-        --time-hover: #8b5cf6;
-        --change: #db2777;
-        --change-hover: #ec4899;
+        --structure: #db2777;
+        --structure-hover: #ec4899;
     }
 }
 
@@ -78,14 +78,14 @@
     --accent-hover: #fb923c;
     --line: #e8e8eb;
 
+    --perception: #84cc16;
+    --perception-hover: #a3e635;
+    --agency: #8b5cf6;
+    --agency-hover: #a78bfa;
     --connection: #06b6d4;
     --connection-hover: #22d3ee;
-    --state: #84cc16;
-    --state-hover: #a3e635;
-    --time: #8b5cf6;
-    --time-hover: #a78bfa;
-    --change: #ec4899;
-    --change-hover: #f472b6;
+    --structure: #ec4899;
+    --structure-hover: #f472b6;
 }
 
 :root.theme-light {
@@ -97,20 +97,20 @@
     --accent-hover: #14b8a6;
     --line: #2a2a2e;
 
+    --perception: #65a30d;
+    --perception-hover: #84cc16;
+    --agency: #7c3aed;
+    --agency-hover: #8b5cf6;
     --connection: #0891b2;
     --connection-hover: #06b6d4;
-    --state: #65a30d;
-    --state-hover: #84cc16;
-    --time: #7c3aed;
-    --time-hover: #8b5cf6;
-    --change: #db2777;
-    --change-hover: #ec4899;
+    --structure: #db2777;
+    --structure-hover: #ec4899;
 }
 
-.type-connection { color: var(--connection); }
-.type-state { color: var(--state); }
-.type-time { color: var(--time); }
-.type-change { color: var(--change); }
+.category-perception { color: var(--perception); }
+.category-agency { color: var(--agency); }
+.category-connection { color: var(--connection); }
+.category-structure { color: var(--structure); }
 
 a {
     color: var(--accent);
@@ -220,28 +220,17 @@ ul {
     padding: 1em 0;
 }
 
-/* Card list: name (link), brief */
-.card-list {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0 2em;
-    list-style: none;
-    padding: 0;
+/* Home: cards grouped by category */
+.card-group {
+    margin-bottom: 1.5em;
 }
 
-@media screen and (max-width: 800px) {
-    .card-list {
-        grid-template-columns: minmax(0, 7em) 1fr;
-        gap: 1em 1em;
-    }
+.card-group > ul {
+    margin: 0;
 }
 
-.card-list > li {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 1 / -1;
-    align-items: baseline;
-    padding: 0.2em 0;
+.card-group > ul > li {
+    padding: 0.15em 0;
 }
 
 .card-name {
@@ -249,36 +238,45 @@ ul {
     text-decoration: none;
 }
 
-a.card-name.type-connection:hover,
-a.card-name.type-connection:focus-visible { color: var(--connection-hover); }
+a.card-name.category-perception:hover,
+a.card-name.category-perception:focus-visible { color: var(--perception-hover); }
 
-a.card-name.type-state:hover,
-a.card-name.type-state:focus-visible { color: var(--state-hover); }
+a.card-name.category-agency:hover,
+a.card-name.category-agency:focus-visible { color: var(--agency-hover); }
 
-a.card-name.type-time:hover,
-a.card-name.type-time:focus-visible { color: var(--time-hover); }
+a.card-name.category-connection:hover,
+a.card-name.category-connection:focus-visible { color: var(--connection-hover); }
 
-a.card-name.type-change:hover,
-a.card-name.type-change:focus-visible { color: var(--change-hover); }
+a.card-name.category-structure:hover,
+a.card-name.category-structure:focus-visible { color: var(--structure-hover); }
 
-.card-brief-card {
-    margin-bottom: 3rem;
+/* Card + reading detail */
+.card-meta {
+    margin-bottom: 2.5rem;
 }
 
-.type-name {
-    text-transform: capitalize;
-}
-
-.type-description {
+.category-question {
     color: var(--text-muted);
 }
 
-/* Muted secondary content on card and reading pages */
-.card-examples,
+.card-dimension {
+    font-weight: bold;
+    margin-bottom: 0.25em;
+}
+
 .card-tech,
-.card-reflection {
+.card-manifestations {
     color: var(--text-muted);
     font-size: 0.95em;
+}
+
+.card-manifestations > li {
+    padding: 0.1em 0;
+}
+
+.card-manifestations > li::before {
+    content: "·";
+    margin-right: 0.5em;
 }
 
 /* Reading page */
