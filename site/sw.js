@@ -10,8 +10,8 @@ self.addEventListener('install', function(e) {
                 './fonts/manrope-latin.woff2',
                 './fonts/manrope-latin-ext.woff2',
                 './fonts/manrope-latin-bold.woff2',
-                './img/favicon.png',
-                './img/icon.png',
+                './img/favicon.svg',
+                './js/views/components/card-detail.js',
                 './js/views/components/footer.js',
                 './js/views/components/header.js',
                 './js/views/pages/about.js',
@@ -24,6 +24,7 @@ self.addEventListener('install', function(e) {
                 './js/rng.js',
                 './js/theme.js',
                 './data/cards.json',
+                './data/categories.json',
                 './sw.js'
             ])
         })

@@ -21,7 +21,7 @@ class About {
             <p><strong class="category-agency">Agency.</strong> How do I engage with this?
             (Run, Constraint, Update)</p>
             <p><strong class="category-connection">Connection.</strong> How do I relate to this?
-            (Connection, Signal, Trust)</p>
+            (Link, Signal, Trust)</p>
             <p><strong class="category-structure">Structure.</strong> How is this organized?
             (Sync, Transaction, Firewall)</p>
 

@@ -16,7 +16,7 @@ class Home {
 
     static render() {
         return html`
-            <p class="main-description">The Console is a divination deck of 12 cards, grouped into four categories — four questions you can ask of any situation.</p>
+            <p class="main-description">The Console is a divination deck of twelve cards, grouped into four categories. Each one is a question you can ask of any situation.</p>
             ${Object.entries(categories).map(categoryGroup)}
         `
     }
