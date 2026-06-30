@@ -74,8 +74,7 @@ Examples, from the about page:
 
 - Each **Operator's Guide** note follows the shape above: a short, plain definition of the
   dimension, then three concrete scenes pulled from that card's manifestations.
-- **System Documentation** stays straight and factual. The Radar entry still carries a known slip
-  ("Radar systems… It interprets", a number disagreement) to fix during the System Documentation pass.
+- **System Documentation** stays straight and factual: a brief description of the technology, no humor.
 - **Manifestation lists** stay as plain noun-phrase labels. They are a quick reference, not prose.
 - The connection-category card is named **Link** (its dimension is still Connection), so the card,
   category, and dimension do not all read "Connection".

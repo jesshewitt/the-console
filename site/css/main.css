@@ -259,11 +259,6 @@ a.card-name.category-structure:focus-visible { color: var(--structure-hover); }
     color: var(--text-muted);
 }
 
-.card-dimension {
-    font-weight: bold;
-    margin-bottom: 0.25em;
-}
-
 .card-tech,
 .card-manifestations {
     color: var(--text-muted);

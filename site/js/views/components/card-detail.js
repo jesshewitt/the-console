@@ -10,7 +10,6 @@ export function cardDetail(card, categories) {
         <h3>System Documentation</h3>
         <p class="card-tech">${card.tech}</p>
         <h3>Operator's Guide</h3>
-        <p class="card-dimension">${card.dimension}</p>
         <p class="card-dimension-note">${card.dimensionNote}</p>
         <ul class="card-manifestations">
             ${card.manifestations.map(m => html`<li>${m}</li>`)}
