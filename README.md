@@ -7,7 +7,7 @@ A divination deck. Each card names a recognizable life situation through a tech 
 Two licenses cover this repository:
 
 - **Application code** (everything outside `site/data/*.json` and `content/*.mjs`) is under the MIT license. See `LICENSE`.
-- **Content** (the 24 card entries in `site/data/cards.json` and `content/cards.mjs`) is dedicated to the public domain under CC0 1.0 Universal. See `LICENSE-content`.
+- **Content** (the 12 card entries in `site/data/cards.json` and `content/cards.mjs`) is dedicated to the public domain under CC0 1.0 Universal. See `LICENSE-content`.
 
 ## Running locally
 
@@ -25,7 +25,7 @@ The `-s` flag rewrites any unknown path to `index.html` so reloads on deep URLs 
 node --test
 ```
 
-Covers PRNG determinism, the seeded card-cast output, and the shape of the card data. Requires Node 22+ for JSON module imports.
+Covers PRNG determinism, the seeded card-cast guard, the shape of the card and category data, and the card-detail component. Requires Node 22+ for JSON module imports.
 
 ## Project structure
 
@@ -40,18 +40,19 @@ site/
   fonts/                self-hosted Manrope
   img/                  app icons
   data/
-    cards.json          24 card entries
+    cards.json          12 card entries
+    categories.json     4 category labels + questions
   js/
     app.js              router (History API, click interception)
     html.js             tagged-template helper with auto-escape and raw()
     rng.js              xmur3 + mulberry32 seeded PRNG
     theme.js            three-state theme cycle (auto/light/dark) with localStorage
     views/
-      components/       header, footer
+      components/       header, footer, card-detail
       pages/            home, about, card, reading, error404
 content/
-  build.mjs             generates site/data/cards.json from cards.mjs
-  cards.mjs             24 card entries (source of truth)
+  build.mjs             generates site/data/cards.json + categories.json from cards.mjs
+  cards.mjs             12 card entries (source of truth)
 test/
   smoke.test.js         node:test suite
 netlify.toml            publish dir + SPA redirect
@@ -61,14 +62,14 @@ netlify.toml            publish dir + SPA redirect
 
 Client-side via the History API. Routes:
 
-- `/` - home grid of 24 cards
+- `/` - home grid of 12 cards
 - `/about` - what this is, how a reading works, how to use it well
-- `/card/:id` - card detail, where `:id` is 1-24
+- `/card/:id` - card detail, where `:id` is 1-12
 - `/reading/:seed` - reading flow. The seed is baked into the URL, so any reading is reproducible and shareable.
 
 ## Regenerating the JSON data
 
-The canonical source for the card text is `content/cards.mjs`. Run `node content/build.mjs` to regenerate `site/data/cards.json` from that source.
+The canonical source for the card text is `content/cards.mjs`. Run `node content/build.mjs` to regenerate `site/data/cards.json` and `site/data/categories.json` from that source.
 
 ## Deploy
 
