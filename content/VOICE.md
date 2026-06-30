@@ -6,8 +6,8 @@ checkable against this document.
 ## The premise
 
 Each card reads like a technical manual that has been handed the wrong subject: a human. The
-humor is deadpan and affectionate, and it comes from the contrast between clean machine logic and
-how absurdly people actually run. The card never mocks the individual reader. It teases the
+humor is affectionate and fairly overt, and it comes from the contrast between clean machine logic
+and how absurdly people actually run. The card never mocks the individual reader. It teases the
 universal human condition, fondly.
 
 ## The three voices
@@ -29,24 +29,31 @@ straight. It is the setup, not the punchline. Present tense, no contractions, no
 > works only from reflections, it sometimes misses things that are there and reports things that
 > are not.
 
-### Operator's Guide (card) — dry deadpan
+### Operator's Guide (card) — comic field notes
 
-The human dimension, written as if you were a device being documented by someone mildly
-exasperated but fond. Understated. It lets the absurdity land on its own rather than pointing at
-it. Second person, present tense, no contractions, two to four sentences.
+The human dimension, played for laughs. Open with a short, plain definition of the dimension, then
+give three concrete, funny scenes drawn from the card's manifestations. The comedy lives in
+specific, recognizable situations (the kitchen-gadget rabbit hole, the fridge mistaken for a
+burglar), not in sounding clever or wise. Describe how the thing shows up and stop. Never explain
+the pattern, never draw a lesson, never end on a maxim.
 
-> Awareness is the sensor you read your situation with. It came uncalibrated, keeps a few blind
-> spots it never disclosed, and will sometimes report things that are not there. You will make
-> your decisions using it anyway.
+Use the general "you" (everyone, not the individual reader), with "people" or "humans" dropped in
+occasionally. Present tense, contractions welcome, short sentences. Roughly an opener plus three
+scenes. Avoid "quietly" and other knowing-narrator tells.
+
+> Focus is how and where your attention is directed. You sit down to write the important email, and
+> forty minutes later you're an expert on a kitchen gadget you'll never buy. The argument from last
+> Tuesday, though, gets your full and undivided attention, on a loop, for free. The actual task
+> waits patiently in a tab behind eleven others.
 
 ## Hard rules (all voices)
 
 - **No em-dashes (—) or en-dashes (–)** used as punctuation. Hyphens in compound words are fine
   (self-trust, follow-through, built-in, well-being).
 - **No semicolons.**
-- **No contractions in the two card voices.** The about page may use them.
-- **No oracle or fortune-teller clichés.** The deck's authority is the deadpan manual, not
-  mysticism.
+- **No contractions in System Documentation** (keep the spec-sheet feel). The Operator's Guide and
+  about page use them freely.
+- **No oracle or fortune-teller clichés.** The humor comes from recognizable life, not mysticism.
 
 ## Replacing a dash
 
@@ -63,10 +70,12 @@ Examples, from the about page:
 - "…one of four categories, **each one** a question you can ask of any situation." *(comma recast)*
 - "…the literal mechanism, **what the thing does** in a computer or a network." *(comma appositive)*
 
-## Applying this to the cards (for the later card pass)
+## Card structure notes
 
-- Rewrite each of the 12 **Operator's Guide** notes into the dry-deadpan voice. They currently
-  read as flat definitions and carry none of the voice.
-- Lightly clean the **System Documentation** entries for clarity and the rules above. Keep them
-  straight. Fix the known slip in Radar ("Radar systems… It interprets", a number disagreement).
+- Each **Operator's Guide** note follows the shape above: a short, plain definition of the
+  dimension, then three concrete scenes pulled from that card's manifestations.
+- **System Documentation** stays straight and factual. The Radar entry still carries a known slip
+  ("Radar systems… It interprets", a number disagreement) to fix during the System Documentation pass.
 - **Manifestation lists** stay as plain noun-phrase labels. They are a quick reference, not prose.
+- The connection-category card is named **Link** (its dimension is still Connection), so the card,
+  category, and dimension do not all read "Connection".
