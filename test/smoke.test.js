@@ -2,6 +2,7 @@ import {test} from 'node:test'
 import assert from 'node:assert/strict'
 import {seeded} from '../site/js/rng.js'
 import cards from '../site/data/cards.json' with { type: 'json' }
+import categories from '../site/data/categories.json' with { type: 'json' }
 
 // PRNG tests
 
@@ -75,5 +76,16 @@ test('card categories are evenly distributed across the four categories', () => 
 
     for (const cat of validCategories) {
         assert.equal(counts[cat], 3, `category "${cat}" should have 3 cards, got ${counts[cat]}`)
+    }
+})
+
+test('categories metadata matches card categories', () => {
+    const cardCategories = new Set(cards.map(c => c.category))
+    const metaKeys = new Set(Object.keys(categories))
+    assert.deepEqual([...metaKeys].sort(), [...cardCategories].sort(), 'categories.json keys do not match card categories')
+
+    for (const [key, meta] of Object.entries(categories)) {
+        assert.ok(typeof meta.label === 'string' && meta.label.length > 0, `category ${key} label is empty`)
+        assert.ok(typeof meta.question === 'string' && meta.question.length > 0, `category ${key} question is empty`)
     }
 })
