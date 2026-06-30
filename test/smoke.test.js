@@ -31,14 +31,15 @@ test('card cast is pinned for seed "test"', () => {
 
 // Card data shape tests
 
-test('cards data has 24 entries', () => {
-    assert.equal(cards.length, 24)
+test('cards data has 12 entries', () => {
+    assert.equal(cards.length, 12)
 })
 
 test('cards data shape is intact', () => {
-    const requiredFields = ['id', 'name', 'type', 'brief', 'situation', 'reflection']
+    const requiredFields = ['id', 'name', 'category', 'tech', 'dimension', 'dimensionNote', 'manifestations']
     const names = new Set()
     const ids = new Set()
+    const dimensions = new Set()
 
     for (const c of cards) {
         for (const f of requiredFields) {
@@ -46,30 +47,33 @@ test('cards data shape is intact', () => {
         }
         assert.ok(typeof c.id === 'number', `card id is not a number`)
         assert.ok(typeof c.name === 'string' && c.name.length > 0, `card ${c.id} name is empty`)
-        assert.ok(typeof c.brief === 'string' && c.brief.length > 0, `card ${c.id} brief is empty`)
-        assert.ok(typeof c.situation === 'string' && c.situation.length > 0, `card ${c.id} situation is empty`)
-        assert.ok(typeof c.reflection === 'string' && c.reflection.length > 0, `card ${c.id} reflection is empty`)
+        assert.ok(typeof c.tech === 'string' && c.tech.length > 0, `card ${c.id} tech is empty`)
+        assert.ok(typeof c.dimension === 'string' && c.dimension.length > 0, `card ${c.id} dimension is empty`)
+        assert.ok(typeof c.dimensionNote === 'string' && c.dimensionNote.length > 0, `card ${c.id} dimensionNote is empty`)
+        assert.ok(Array.isArray(c.manifestations) && c.manifestations.length > 0, `card ${c.id} manifestations is empty`)
         names.add(c.name)
         ids.add(c.id)
+        dimensions.add(c.dimension)
     }
 
-    assert.equal(names.size, 24, 'card names are not all unique')
-    assert.equal(ids.size, 24, 'card ids are not all unique')
+    assert.equal(names.size, 12, 'card names are not all unique')
+    assert.equal(dimensions.size, 12, 'card dimensions are not all unique')
+    assert.equal(ids.size, 12, 'card ids are not all unique')
     assert.equal(Math.min(...ids), 1, 'lowest card id is not 1')
-    assert.equal(Math.max(...ids), 24, 'highest card id is not 24')
-    assert.deepEqual([...ids].sort((a, b) => a - b), Array.from({length: 24}, (_, i) => i + 1), 'card ids are not 1-24 with no gaps')
+    assert.equal(Math.max(...ids), 12, 'highest card id is not 12')
+    assert.deepEqual([...ids].sort((a, b) => a - b), Array.from({length: 12}, (_, i) => i + 1), 'card ids are not 1-12 with no gaps')
 })
 
-test('card types are evenly distributed across the four dimensions', () => {
-    const validTypes = new Set(['connection', 'state', 'time', 'change'])
-    const counts = {connection: 0, state: 0, time: 0, change: 0}
+test('card categories are evenly distributed across the four categories', () => {
+    const validCategories = new Set(['perception', 'agency', 'connection', 'structure'])
+    const counts = {perception: 0, agency: 0, connection: 0, structure: 0}
 
     for (const c of cards) {
-        assert.ok(validTypes.has(c.type), `card ${c.id} has invalid type "${c.type}"`)
-        counts[c.type]++
+        assert.ok(validCategories.has(c.category), `card ${c.id} has invalid category "${c.category}"`)
+        counts[c.category]++
     }
 
-    for (const t of validTypes) {
-        assert.equal(counts[t], 6, `type "${t}" should have 6 cards, got ${counts[t]}`)
+    for (const cat of validCategories) {
+        assert.equal(counts[cat], 3, `category "${cat}" should have 3 cards, got ${counts[cat]}`)
     }
 })
